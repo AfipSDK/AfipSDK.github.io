@@ -13,4 +13,8 @@
   <loc>https://afipsdk.github.io/factura-electronica-obligatoria.html</loc>
   <priority>0.90</priority>
 </url>
+<url>
+  <loc>https://afipsdk.github.io/cuidado-con-los-aprovechadores.html</loc>
+  <priority>0.90</priority>
+</url>
 </urlset>
