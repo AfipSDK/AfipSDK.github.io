@@ -1,5 +1,77 @@
 @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400";
 
+/* Custom CSS */
+.pro-label{
+	background-color: white;
+	color: #5f4d93;
+	font-size: 50%;
+	border-radius: 4px;
+	padding: 1px 10px;
+	letter-spacing: 2px;
+	border: 1px solid;
+}
+
+
+#header.alt.pro {
+	padding: 4em 5em;
+}
+
+.statistics [class^='fa']{
+	margin-bottom: 10px;
+} 
+
+#footer > .actions{
+	width: 100%
+}
+
+.text-left{
+	text-align: left;
+}
+
+.list-clear{
+	list-style: none;
+}
+
+.list-clear li{
+	margin-bottom: 0.85em
+}
+
+.list-clear li .fa-fw{
+	margin-right: 15px;
+	vertical-align: middle;
+	font-size: 25px;
+}
+
+.price{
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+.margin-b-15{
+	margin-bottom: 15px;
+}
+
+.text-success, .text-success:hover {
+    color: #0C9C14;
+}
+.text-danger, .text-danger:hover {
+    color: #EE2D20;
+}
+
+.licences-table tr td:first-child{
+	text-align: left;
+}
+
+.licences-table td{
+	vertical-align: middle;
+}
+
+.licences-table th{
+	text-align: center;
+}
+.licences-table tr th:first-child{
+	text-align: left;
+}
 /*
 	Stellar by HTML5 UP
 	html5up.net | @ajlkn
@@ -2212,15 +2284,6 @@ input, select, textarea {
 		border-bottom: none;
 		position: relative;
 	}
-
-		.icon:before {
-			-moz-osx-font-smoothing: grayscale;
-			-webkit-font-smoothing: antialiased;
-			font-family: FontAwesome;
-			font-style: normal;
-			font-weight: normal;
-			text-transform: none !important;
-		}
 
 		.icon > .label {
 			display: none;
