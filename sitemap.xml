@@ -8,6 +8,10 @@
 <url>
   <loc>https://afipsdk.github.io/</loc>
   <priority>1.00</priority>
+<url>
+  <loc>https://afipsdk.github.io/pro.html</loc>
+  <priority>0.95</priority>
+</url>
 </url>
 <url>
   <loc>https://afipsdk.github.io/factura-electronica-obligatoria.html</loc>
