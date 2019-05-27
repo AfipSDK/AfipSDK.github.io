@@ -32,14 +32,21 @@
 	list-style: none;
 }
 
-.list-clear li{
+.list-clear > li{
 	margin-bottom: 0.85em
 }
 
-.list-clear li .fa-fw{
+.list-clear > li .fa-fw{
 	margin-right: 15px;
 	vertical-align: middle;
 	font-size: 25px;
+}
+
+
+.sub-list{
+    margin-left: 35px;
+    list-style: disclosure-closed inside;
+	color: #8d8d8d;
 }
 
 .price{
