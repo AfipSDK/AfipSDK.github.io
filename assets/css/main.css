@@ -64,6 +64,9 @@
 .text-danger, .text-danger:hover {
     color: #EE2D20;
 }
+.text-warning, .text-warning:hover {
+    color: #ffe01b;
+}
 
 .licences-table tr td:first-child{
 	text-align: left;
