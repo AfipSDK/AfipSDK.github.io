@@ -102,6 +102,17 @@ ul.licence-features li{
 .margin-b-100{
 	margin-bottom: 100px;
 }
+
+.warranty-wrapper{
+	color: #d7ba02;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+.warranty-wrapper img{
+	width: 300px; 
+	max-width: 100%; 
+}
 /*
 	Stellar by HTML5 UP
 	html5up.net | @ajlkn
