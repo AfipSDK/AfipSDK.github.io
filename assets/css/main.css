@@ -99,6 +99,10 @@ ul.licence-features li{
 	text-align: center;
 }
 
+.text-line-through {
+	text-decoration: line-through;
+}
+
 .margin-b-100{
 	margin-bottom: 100px;
 }
