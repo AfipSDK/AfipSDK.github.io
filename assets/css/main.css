@@ -131,6 +131,22 @@ ul.licence-features li{
 	letter-spacing: 1px;
 }
 
+
+.code-image, .bill-image-container img{
+	max-width: 750px;
+	box-shadow: 0 0 4px #c0c0c0;
+	border-radius: 5px;
+}
+
+.bill-image-container {
+	text-align: right;
+	margin: 40px 0;
+}
+
+.bill-image-container img {
+
+}
+
 /*
 	Stellar by HTML5 UP
 	html5up.net | @ajlkn
