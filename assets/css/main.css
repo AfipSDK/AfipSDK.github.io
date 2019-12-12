@@ -51,7 +51,9 @@
 
 .price{
 	font-size: 30px;
+	margin-top: 10px;
 	margin-bottom: 20px;
+	font-weight: 500;
 }
 
 .margin-b-15{
@@ -118,14 +120,23 @@ ul.licence-features li{
 	max-width: 100%; 
 }
 
+.buy-pro {
+	box-shadow: 0 0 20px #c0c0c0;
+	padding: 15px 5px;
+	border-radius: 10px;
+	margin-top: 50px;
+	border: 1px dashed #c0c0c0;
+}
+
 /* Bill Cloud */
-.bill-cloud{
+.bill-cloud {
 	box-shadow: 0 0 20px #c0c0c0;
 	padding: 15px 5px;
 	border-radius: 10px;
 	margin-top: 50px;
 	font-weight: 400;
 }
+
 
 .bill-cloud a {
 	letter-spacing: 1px;
