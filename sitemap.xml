@@ -6,15 +6,15 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
-  <loc>https://afipsdk.github.io/</loc>
+  <loc>https://afipsdk.com/</loc>
   <priority>1.00</priority>
 <url>
-  <loc>https://afipsdk.github.io/pro.html</loc>
+  <loc>https://afipsdk.com/pro.html</loc>
   <priority>0.95</priority>
 </url>
 </url>
 <url>
-  <loc>https://afipsdk.github.io/factura-electronica-obligatoria.html</loc>
+  <loc>https://afipsdk.com/factura-electronica-obligatoria.html</loc>
   <priority>0.90</priority>
 </url>
 </urlset>
