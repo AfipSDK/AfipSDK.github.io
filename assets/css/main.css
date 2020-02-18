@@ -43,17 +43,27 @@
 }
 
 
-.sub-list{
+.sub-list {
     margin-left: 35px;
     list-style: disclosure-closed inside;
 	color: #8d8d8d;
 }
 
-.price{
+.price-original {
+	font-size: 20px;
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+
+.price {
 	font-size: 30px;
-	margin-top: 10px;
+	margin-top: 5px;
 	margin-bottom: 20px;
 	font-weight: 500;
+	border-top: 1px solid #c0c0c0;
+	border-bottom: 1px solid #c0c0c0;
+	margin-left: -5px;
+	margin-right: -5px;
 }
 
 .margin-b-15{
