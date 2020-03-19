@@ -1,6 +1,41 @@
 @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400";
 
 /* Custom CSS */
+
+/**
+ * Opinions
+ **/
+
+.opinion > .name {
+	width: 130px;
+	height: 130px;
+	margin: auto;
+	border: 1px solid #c0c0c0;
+	padding: 10px;
+	border-radius: 80px;
+	font-size: 20px;
+	line-height: 100px;
+	box-shadow: 0 0 5px #c0c0c0;
+	background: white;
+}
+
+.opinion > .name >span {
+	line-height: 1.5;
+	display: inline-block;
+	vertical-align: middle;
+}
+.opinion > .text {
+	padding: 20px;
+}
+
+.opinion {
+	margin-top: 20px; 
+}
+
+.opinions {
+	background: #fbfbfb;
+}
+
 .pro-label{
 	background-color: white;
 	color: #5f4d93;
