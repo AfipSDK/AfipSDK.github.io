@@ -53,6 +53,18 @@
 			a.appendChild(r);
 		})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 		</script>
+
+		<!-- Facebook Pixel Code -->
+		<script>
+		!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+		n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+		document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+		fbq('init', '685344108762743');
+		fbq('track', 'PageView');
+		</script>
 	</head>
 	<body class="is-preload">
 
@@ -149,7 +161,7 @@
 							<p>
 								¿Quieres implementarlo de forma rápida y fiable? Obtén Afip SDK PRO que incluye soporte y ayuda personalizada por 6 meses donde te ayudaremos integrar los web services de Afip con tu aplicación, y una amplia documentación con ejemplos, tutoriales, implementación en Frameworks y plataformas, y mucho más.
 							</p>
-							<a href="./pro.html" class="button primary">Saber más</a>
+							<a onclick="javascript:fbq('track', 'ClickOpenPRO');" href="./pro.html" class="button primary">Saber más</a>
 						</section>
 
 						<!-- GitHub -->
