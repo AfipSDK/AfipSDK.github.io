@@ -105,6 +105,10 @@
 	margin-bottom: 15px;
 }
 
+.margin-b-50{
+	margin-bottom: 50px;
+}
+
 .text-success, .text-success:hover {
     color: #0C9C14;
 }
