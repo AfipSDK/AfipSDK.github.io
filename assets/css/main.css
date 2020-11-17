@@ -207,11 +207,19 @@ ul.licence-features li{
 
 }
 
-
 .price-clearout {
 	text-decoration: underline;
 	margin-bottom: 10px;
 	font-size: 15px;
+}
+
+.danger-alert {
+	border: 1px solid #EE2D20;
+	background: #D5382E;
+	border-radius: 5px;
+	padding: 10px 15px;
+	font-weight: 400;
+	color: white;
 }
 
 /*
