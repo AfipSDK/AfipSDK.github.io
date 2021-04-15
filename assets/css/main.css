@@ -141,13 +141,19 @@
 ul.licence-features{
 	list-style: none;
 	padding: 0;
-	margin-bottom: 0px;
+	margin-bottom: 30px;
 }
 
 ul.licence-features li{
 	margin: 0;
 	width: 100%;
 	font-size: 16px;
+	padding: 2px 5px;
+}
+
+ul.licence-features li.extra{
+	background: #f7f7f7;
+    border-radius: 10px;
 }
 
 .text-center{
@@ -207,13 +213,9 @@ ul.licence-features li{
 	margin: 40px 0;
 }
 
-.bill-image-container img {
-
-}
-
 .price-clearout {
 	text-decoration: underline;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 	font-size: 15px;
 }
 
