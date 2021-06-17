@@ -2,6 +2,11 @@
 
 /* Custom CSS */
 
+img.sm {
+	width: 25px;
+	vertical-align: middle;
+}
+
 .text-m {
 	font-size: 15px;
 }
