@@ -11,6 +11,22 @@ img.sm {
 	font-size: 15px;
 }
 
+.customers-list a {
+	display: inline-block;
+	max-width: 130px;
+	text-decoration: none;
+	border-bottom: none;
+	vertical-align: middle;
+	margin: 10px;
+}
+
+.customers-list a img{
+	border: 1px;
+	max-height: 50px;
+	max-width: 100%;
+	vertical-align: middle;
+}
+
 /**
  * Opinions
  **/
