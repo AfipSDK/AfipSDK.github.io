@@ -2,10 +2,25 @@
 
 /* Custom CSS */
 
+.prefered-plan-col {
+	border: 1px solid #5f4d93;
+	box-shadow: 0 0 20px #c0c0c0;
+	padding: 10px;
+	border-radius: 10px;
+}	
+
+.prefered-plan {
+	background-color: #5f4d93;
+	color: white;
+	border-radius: 10px;
+	font-weight: 600;
+	margin-bottom: 30px !important;
+	padding: 10px !important;
+}
+
 .screenshot {
 	border: none;
 }
-
 
 .screenshot img{
 	width: 30%;
