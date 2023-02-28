@@ -1,0 +1,5 @@
+Obtener datos del padrón alcance 10
+-----------------------------------
+
+.. literalinclude:: code/Obtener datos del padrón alcance 10.php
+   :language: php

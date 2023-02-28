@@ -1,0 +1,37 @@
+Implementación en Symfony
+=============================
+
+1 - Ejecutar el siguiente comando en tu proyecto:
+
+``composer require afipsdk/afip.php``
+
+2 - Ir a ``ruta/a/tu/proyecto/vendor/afipsdk/afip.php/src/Afip_res`` y reemplazar los archivos ``cert`` y ``key`` por el certificado y key generados. Si aún no los has generado en la sección :ref:`tutorials` se explica cómo hacerlo.
+
+3 - Usar el siguiente código en el controlador:
+
+.. highlight:: PHP
+
+::
+
+	<?php
+
+	namespace AppBundle\Controller;
+
+	use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+
+	use Afip;
+
+	class DefaultController extends Controller
+	{
+	    /**
+	     * @Route("/", name="homepage")
+	     */
+	    public function indexAction(Request $request)
+	    {
+	        $afip = new Afip(array('CUIT' => 11111111111)); //Reemplazar el CUIT
+
+	        //Esta línea es solo para probar si funciona pero no es obligatorio
+	        $test = $afip->ElectronicBilling->GetDocumentTypes();
+	    }
+	}
+

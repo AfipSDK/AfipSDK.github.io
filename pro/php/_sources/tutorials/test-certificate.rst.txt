@@ -1,0 +1,81 @@
+.. _tutorial_test_certificate:
+
+Obtener certificado de testing
+=====================================
+
+Lo primero que debemos hacer es generar un Certificate Signing Request (CSR). Este archivo CSR nos servirá para pedir el certificado en la página de AFIP.
+
+Para generar el CSR debemos tener instalado el OpenSLL, el cual ya viene en los sistemas Linux. Para Windows se puede descargar desde https://sourceforge.net/projects/openssl/, una vez descargado copiar la carpeta ``bin`` en ``C:\`` con el nombre ``OpenSSL``. 
+
+Ahora debemos abrir una consola. En Windows se debe abrir en modo administrador y navegar hacia ``C:\OpenSSL``
+
+Dentro de la consola lo primero que debemos ejecutar es el siguiente comando para generar el archivo key. 
+
+.. code-block:: bash
+
+	openssl genrsa -out [nombre de archivo para la key] 2048
+
+Reemplazando:
+
+	- ``[nombre de archivo para la key]`` con el nombre que queres que se guarde el archivo.
+
+Este archivo key es muy importante porque representa la "contraseña" con la que va a funcionar el certificado así que no debemos perderlo.
+
+Por ejemplo yo voy a generarlo de la siguiente forma
+
+.. code-block:: bash
+
+	openssl genrsa -out keytest 2048
+
+De esta forma el nombre de mi archivo key seria ``keytest``	
+
+Una vez generada la key estamos listos para generar el CSR. Para ello debemos ejecutar el siguiente comando
+
+.. code-block:: bash
+
+	openssl req -new -key [nombre de archivo para la key] -subj "/C=AR/O=[nombre de la empresa]/CN=[nombre del certificado]/serialNumber=CUIT [CUIT]" -out [nombre de archivo para el CSR]
+
+
+Reemplazando:
+
+	- ``[nombre de archivo para la key]`` con el nombre del archivo key generado anteriormente. 
+	- ``[nombre de la empresa]`` con el nombre de la empresa para quien es el certificado. En testing recomendamos utilizar el nombre de uno para no generar confusiones.
+	- ``[nombre del certificado]`` con el nombre que quieres que tenga el certificado. Solo se pueden utilizar letras y números. Esto es a modo de que puedas reconocerlo luego si generas varios certificados para diferentes sistemas
+	- ``[CUIT]`` con el CUIT de la empresa para quien es el certificado. De nuevo, en testing recomendamos usar el CUIT de uno para no generar confusiones.
+	- ``[nombre de archivo para el CSR]`` con el nombre que quieres que se guarde el archivo CSR
+
+Por ejemplo yo lo generaría de la siguiente forma
+
+.. code-block:: bash
+
+	openssl req -new -key keytest -subj "/C=AR/O=Mi nombre/CN=Test1/serialNumber=CUIT 11111111111" -out csr-test1
+
+Donde en "Mi nombre" pondría mi nombre (valga la redundancia) y en "11111111111" podía mi CUIT/CUIL
+
+Teniendo el archivos CSR ya podemos dirigirnos a la página de Afip para generar el certificado.
+	
+Dentro de nuestro escritorio de AFIP debemos ingresar en "WSASS - Autogestión Certificados Homologación" 
+
+.. figure:: ../_static/images/test-certificate/1.png
+    :target: ../_static/images/test-certificate/1.png
+
+En caso de no tener esta aplicación en tu escritorio debes ver el tutorial :ref:`tutorial_test_add_aministration`
+
+Dentro de esta aplicación debemos ir a "Nuevo Certificado"
+
+.. figure:: ../_static/images/test-certificate/2.png
+    :target: ../_static/images/test-certificate/2.png
+
+Alli en "1. Nombre simbólico del DN" debemos colocar el nombre que le pusimos el certificado dentro del CSR.
+
+En "2. Solicitud del certificado en formato PKCS#10" debemos pegar el contenido de nuestro CSR.
+
+Y luego apretar "Crear DN y obtener certificado". En mi caso quedaría así	
+
+.. figure:: ../_static/images/test-certificate/3.png
+    :target: ../_static/images/test-certificate/3.png
+
+
+Y debajo se nos generara el certificado, este debemos guardarlo en nuestra computadora junto con la key para usarlo luego en la librería. El archivo CSR ya no lo necesitaremos.
+
+Ahora lo que nos queda por hacer es autorizar a que con este certificado se pueda acceder al/los web service/s que queramos usar. :ref:`tutorial_test_authorization`

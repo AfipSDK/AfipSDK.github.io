@@ -1,0 +1,5 @@
+Crear Nota de Crédito A
+-----------------------
+
+.. literalinclude:: code/Crear Nota de Crédito A.js
+   :language: javascript

@@ -1,0 +1,7 @@
+Integrar otro web service
+------------------------------------------
+
+Este es un ejemplo completo de como usar cualquier otro web service de AFIP con el SDK.
+
+.. literalinclude:: code/Integrar otro web service.js
+   :language: javascript

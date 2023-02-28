@@ -1,0 +1,5 @@
+Cambiar nombre o ruta de archivo cert
+-------------------------------------
+
+.. literalinclude:: code/Cambiar nombre o ruta de archivo cert.php
+   :language: php

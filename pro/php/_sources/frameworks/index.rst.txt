@@ -1,0 +1,13 @@
+Implementación en Frameworks y Plataformas
+==========================================
+Aquí encontraras tutoriales paso a paso para comenzar a usar Afip SDK en los Frameworks y Plataformas de PHP más utilizadas por los desarrolladores.
+
+.. toctree::
+
+   laravel
+   symfony
+   codeigniter
+   cakephp
+   yii
+   magento
+   wordpress

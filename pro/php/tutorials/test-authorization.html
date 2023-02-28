@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Autorizar a un web service de testing &mdash; documentación de Afip SDK PRO - 0.1</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.png"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="Habilitar administrador de certificados de testing" href="test-add-administration.html" />
+    <link rel="prev" title="Obtener certificado de testing" href="test-certificate.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #5f4d93" >
+            <a href="../index.html">
+            <img src="../_static/logo.png" class="logo" alt="Logotipo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../examples/index.html">Ejemplos de uso</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../examples/Crear%20Factura%20A.html">Crear Factura A</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/Crear%20Factura%20B.html">Crear Factura B</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/Crear%20Factura%20C.html">Crear Factura C</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/Crear%20Factura%20de%20Credito%20electronica%20A.html">Crear Factura de Crédito electrónica A</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/Crear%20Factura%20de%20Credito%20electronica%20B.html">Crear Factura de Crédito electrónica B</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/Crear%20Factura%20de%20Credito%20electronica%20C.html">Crear Factura de Crédito electrónica C</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/Obtener%20el%20numero%20de%20ultima%20Factura%20A.html">Obtener el número de ultima Factura A</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/Obtener%20el%20numero%20de%20ultima%20Factura%20B.html">Obtener el número de ultima Factura B</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/Obtener%20el%20numero%20de%20ultima%20Factura%20C.html">Obtener el número de ultima Factura C</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/Obtener%20informacion%20de%20Factura%20A%20ya%20emitida.html">Obtener información de Factura A ya emitida</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/Obtener%20informacion%20de%20Factura%20B%20ya%20emitida.html">Obtener información de Factura B ya emitida</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/Obtener%20informacion%20de%20Factura%20C%20ya%20emitida.html">Obtener información de Factura C ya emitida</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/Crear%20Nota%20de%20Credito%20A.html">Crear Nota de Crédito A</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/Crear%20Nota%20de%20Credito%20B.html">Crear Nota de Crédito B</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/Crear%20Nota%20de%20Credito%20C.html">Crear Nota de Crédito C</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/Obtener%20datos%20del%20padron%20alcance%204.html">Obtener datos del padrón alcance 4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/Obtener%20datos%20del%20padron%20alcance%205.html">Obtener datos del padrón alcance 5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/Obtener%20datos%20del%20padron%20alcance%2010.html">Obtener datos del padrón alcance 10</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/Obtener%20datos%20del%20padron%20alcance%2013.html">Obtener datos del padrón alcance 13</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/Obtener%20numero%20para%20el%20codigo%20de%20barras.html">Obtener número para el código de barras</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/Cambiar%20nombre%20o%20ruta%20de%20archivo%20cert.html">Cambiar nombre o ruta de archivo cert</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/Cambiar%20nombre%20o%20ruta%20de%20archivo%20key.html">Cambiar nombre o ruta de archivo key</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/Cambiar%20carpeta%20donde%20se%20guardan%20los%20Token.html">Cambiar carpeta donde se guardan los Token</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/Usar%20el%20SDK%20en%20modo%20produccion.html">Usar el SDK en modo producción</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/Declarar%20varios%20tipos%20de%20IVA.html">Declarar varios tipos de IVA</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../frameworks/index.html">Implementación en Frameworks y Plataformas</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../frameworks/laravel.html">Implementación en Laravel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../frameworks/symfony.html">Implementación en Symfony</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../frameworks/codeigniter.html">Implementación en CodeIgniter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../frameworks/cakephp.html">Implementación en CakePHP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../frameworks/yii.html">Implementación en Yii</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../frameworks/magento.html">Implementación en Magento</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../frameworks/wordpress.html">Implementación en WordPress</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Tutoriales para la página AFIP</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="test-certificate.html">Obtener certificado de testing</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Autorizar a un web service de testing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="test-add-administration.html">Habilitar administrador de certificados de testing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="production-certificate.html">Obtener certificado de producción</a></li>
+<li class="toctree-l2"><a class="reference internal" href="production-authorization.html">Autorizar a un web service de producción</a></li>
+<li class="toctree-l2"><a class="reference internal" href="production-add-administration.html">Habilitar administrador de certificados de producción</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../generic_web_service.html">Integrar otro web service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../errors.html">Solución a errores más frecuentes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Preguntas frecuentes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #5f4d93" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Afip SDK PRO</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="index.html">Tutoriales para la página AFIP</a> &raquo;</li>
+      <li>Autorizar a un web service de testing</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="autorizar-a-un-web-service-de-testing">
+<span id="tutorial-test-authorization"></span><h1>Autorizar a un web service de testing<a class="headerlink" href="#autorizar-a-un-web-service-de-testing" title="Enlazar permanentemente con este título"></a></h1>
+<p>Para que los certificados puedan acceder a un web service se debe crear una autorización, esto se hace de la siguiente manera:</p>
+<p>Dentro de «WSASS - Autogestión Certificados Homologación», que ya explicamos cómo ingresar anteriormente en <a class="reference internal" href="test-certificate.html#tutorial-test-certificate"><span class="std std-ref">Obtener certificado de testing</span></a>, debemos ir a «Crear autorización a servicio»</p>
+<figure class="align-default">
+<a class="reference external image-reference" href="../_static/images/test-authorization/1.png"><img alt="../_images/14.png" src="../_images/14.png" /></a>
+</figure>
+<p>Allí dentro en «1. Nombre simbólico del DN a autorizar» debemos seleccionar el certificado que queremos autorizar.</p>
+<p>En «3. CUIT representado» debemos ingresar el CUIT con el cual queremos utilizar el web service. En modo testing recomendamos usar el CUIT propio para no crear confusión.</p>
+<p>Y en «5. Servicio al que desea acceder» debemos elegir el web service a utilizar.`</p>
+<p>Con todo esto listo debemos presionar en «Crear autorización de acceso»</p>
+<p>Por ejemplo para autorizar al Web service de factura electrónica me quedaría así</p>
+<figure class="align-default">
+<a class="reference external image-reference" href="../_static/images/test-authorization/2.png"><img alt="../_images/24.png" src="../_images/24.png" /></a>
+</figure>
+<p>Luego ingresamos en «Autorizaciones» para verificar que se creó la autorización correctamente</p>
+<figure class="align-default">
+<a class="reference external image-reference" href="../_static/images/test-authorization/3.png"><img alt="../_images/34.png" src="../_images/34.png" /></a>
+</figure>
+<p>Eso sería todo, ya estamos listos para usar el certificado con el web service autorizado</p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
+        <a href="test-certificate.html" class="btn btn-neutral float-left" title="Obtener certificado de testing" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="test-add-administration.html" class="btn btn-neutral float-right" title="Habilitar administrador de certificados de testing" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Derechos de autor 2019, Afip SDK.</p>
+  </div>
+
+  Compilado con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

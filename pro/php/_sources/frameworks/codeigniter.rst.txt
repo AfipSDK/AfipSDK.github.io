@@ -1,0 +1,45 @@
+Implementación en CodeIgniter
+=============================
+
+1 - Descargar la librería desde https://github.com/AfipSDK/afip.php/archive/master.zip
+
+2 - Copiar los archivos de la carpeta ``afip.php-master/afip.php-master/src`` y pegarlos en la carpeta ``ruta/a/tu/proyecto/application/third_party/afip_sdk`` de tu proyecto.
+
+3 - Ir a ``ruta/a/tu/proyecto/application/third_party/afip_sdk/Afip_res`` y reemplazar los archivos ``cert`` y ``key`` por el certificado y key generados. Si aún no los has generado en la sección :ref:`tutorials` se explica cómo hacerlo.
+
+4 - Crear un archivo vacío con el nombre ``Afip.php`` y guardarlo en ``ruta/a/tu/proyecto/application/libraries``. Copia y pega el siguiente contenido en el archivo creado:
+
+.. highlight:: PHP
+
+::
+
+	<?php
+	defined('BASEPATH') OR exit('No direct script access allowed');
+
+	include APPPATH .'third_party/afip_sdk/Afip.php';
+
+
+5 - Usar el siguiente código en el controlador:
+
+.. highlight:: PHP
+
+::
+
+	<?php
+	defined('BASEPATH') OR exit('No direct script access allowed');
+
+	class Welcome extends CI_Controller {
+
+		public function __construct()
+		{
+			parent::__construct();
+			$this->load->library('afip', array('CUIT' => 11111111111)); //Reemplazar el CUIT
+		}
+
+		public function index()
+		{
+			//Esta línea es solo para probar si funciona pero no es obligatorio
+			$test = $this->afip->ElectronicBilling->GetDocumentTypes();		
+		}
+	}
+

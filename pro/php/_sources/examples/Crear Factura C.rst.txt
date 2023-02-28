@@ -1,0 +1,5 @@
+Crear Factura C
+---------------
+
+.. literalinclude:: code/Crear Factura C.php
+   :language: php

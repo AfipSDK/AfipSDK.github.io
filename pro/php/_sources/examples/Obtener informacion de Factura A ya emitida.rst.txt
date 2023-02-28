@@ -1,0 +1,5 @@
+Obtener información de Factura A ya emitida
+-------------------------------------------
+
+.. literalinclude:: code/Obtener información de Factura A ya emitida.php
+   :language: php

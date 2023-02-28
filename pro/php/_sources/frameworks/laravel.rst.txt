@@ -1,0 +1,32 @@
+Implementación en Laravel
+=============================
+
+1 - Ejecutar el siguiente comando en tu proyecto:
+
+``composer require afipsdk/afip.php``
+
+2 - Ir a ``ruta/a/tu/proyecto/vendor/afipsdk/afip.php/src/Afip_res`` y reemplazar los archivos ``cert`` y ``key`` por el certificado y key generados. Si aún no los has generado en la sección :ref:`tutorials` se explica cómo hacerlo.
+
+3 - Usar el siguiente código en el controlador:
+
+.. highlight:: PHP
+
+::
+
+	<?php
+
+	namespace App\Http\Controllers;
+
+	use App\Http\Controllers\Controller;
+	use Afip;
+
+	class HomeController extends Controller
+	{
+		public function index()
+		{
+			$afip = new Afip(array('CUIT' => 11111111111)); //Reemplazar el CUIT
+
+			//Esta línea es solo para probar si funciona pero no es obligatorio
+			$test = $afip->ElectronicBilling->GetDocumentTypes();
+		}
+	}

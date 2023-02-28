@@ -1,0 +1,94 @@
+.. _tutorial_production_certificate:
+
+Obtener certificado de producción
+===================================
+
+Lo primero que debemos hacer es generar un Certificate Signing Request (CSR). Este archivo CSR nos servirá para pedir el certificado en la página de AFIP.
+
+Para generar el CSR debemos tener instalado el OpenSLL, el cual ya viene en los sistemas Linux. Para Windows se puede descargar desde https://sourceforge.net/projects/openssl/, una vez descargado copiar la carpeta ``bin`` en ``C:\`` con el nombre ``OpenSSL``. 
+
+Ahora debemos abrir una consola. En Windows se debe abrir en modo administrador y navegar hacia ``C:\OpenSSL``
+
+Dentro de la consola lo primero que debemos ejecutar es el siguiente comando para generar el archivo key. 
+
+.. code-block:: bash
+
+	openssl genrsa -out [nombre de archivo para la key] 2048
+
+Reemplazando:
+
+	- ``[nombre de archivo para la key]`` con el nombre que queres que se guarde el archivo.
+
+Por ejemplo yo voy a generarlo de la siguiente forma
+
+.. code-block:: bash
+
+	openssl genrsa -out keyproduccion 2048	
+
+De esta forma el nombre de mi archivo key seria ``keyproduccion``
+
+Una vez generada la key estamos listos para generar el CSR. Para ello debemos ejecutar el siguiente comando
+
+.. code-block:: bash
+
+	openssl req -new -key [nombre de archivo para la key] -subj "/C=AR/O=[nombre de la empresa]/CN=[nombre del certificado]/serialNumber=CUIT [CUIT]" -out [nombre de archivo para el CSR]
+
+Reemplazando:
+
+	- ``nombre de archivo para la key`` con el nombre del archivo key generado anteriormente. 
+	- ``nombre de la empresa`` con el nombre de la empresa para quien es el certificado. 
+	- ``nombre del certificado`` con el nombre que quieres que tenga el certificado. Solo se pueden utilizar letras y números. Esto es a modo de que puedas reconocerlo luego si generas varios certificados para diferentes sistemas
+	- ``CUIT`` con el CUIT de la empresa para quien es el certificado.
+	- ``nombre de archivo para el CSR`` con el nombre que quieres que se guarde el archivo CSR
+
+Por ejemplo yo lo generaría de la siguiente forma 
+
+.. code-block:: bash
+
+	openssl req -new -key keyproduccion -subj "/C=AR/O=Nombre Empresa/CN=Test1/serialNumber=CUIT 11111111111" -out csr-produccion
+
+Donde en "Nombre Empresa" pondría el nombre de la empresa y en "11111111111" podía el CUIT de la empresa
+
+Teniendo el archivos CSR ya podemos dirigirnos a la página de Afip para generar el certificado.
+
+Dentro de nuestro escritorio de AFIP debemos ingresar en "Administración de Certificados Digitales" 
+
+.. figure:: ../_static/images/production-certificate/1.png
+    :target: ../_static/images/production-certificate/1.png
+
+En caso de no tener esta aplicación en tu escritorio ver el tutorial :ref:`tutorial_production_add_administration`
+
+En caso de tener permiso para administrar las relaciones de otros contribuyentes nos hará elegir el de quien queremos administrar.
+
+.. figure:: ../_static/images/production-certificate/2.png
+    :target: ../_static/images/production-certificate/2.png
+
+Dentro de esta aplicación debemos ir a "Agregar alias"
+
+.. figure:: ../_static/images/production-certificate/3.png
+    :target: ../_static/images/production-certificate/3.png
+
+Allí en "Alias" debemos colocar el nombre que le pusimos el certificado dentro del CSR.
+
+Luego presionamos examinar y elegimos el CSR que generamos anteriormente.
+
+Por ultimo presionamos "Agregar Alias" y ya tenemos nuestro certificado
+
+.. figure:: ../_static/images/production-certificate/4.png
+    :target: ../_static/images/production-certificate/4.png
+
+Ahora en la lista de Alias presionamos "ver"
+
+.. figure:: ../_static/images/production-certificate/5.png
+    :target: ../_static/images/production-certificate/5.png
+
+Y allí presionamos el boto debajo de "descargar"
+
+
+.. figure:: ../_static/images/production-certificate/6.png
+    :target: ../_static/images/production-certificate/6.png
+
+Y eso es todo ya tenemos nuestro certificado y la key para usarlos luego en la librería. El archivo CSR ya no lo necesitaremos.
+
+Ahora lo que nos queda es autorizar a que con este certificado se pueda acceder al/los web service/s que queramos usar. :ref:`tutorial_production_authorization`
+

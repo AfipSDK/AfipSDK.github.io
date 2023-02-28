@@ -1,0 +1,35 @@
+Implementación en WordPress
+===========================
+
+1 - Descargar la librería desde https://github.com/AfipSDK/afip.php/archive/master.zip
+
+2 - Copia los archivos de la carpeta ``afip.php-master/afip.php-master/src`` y pegarlos en la carpeta de tu aplicación de Wordpress.
+
+3 - Ir a ``ruta/a/afip.php/src/Afip_res`` y reemplazar los archivos ``cert`` y ``key`` por el certificado y key generados. Si aún no los has generado en la sección :ref:`tutorials` se explica cómo hacerlo.
+
+4 - En los archivos donde utilices la librería debes agregar: 
+
+.. highlight:: PHP
+
+::
+
+	<?php
+
+	if(!class_exists( 'Afip')) {
+		include 'ruta/a/afip.php/src/Afip.php';
+	}
+
+
+5 - Eso es todo, ahora solo queda crear una instancia de la clase donde la necesites:
+
+.. highlight:: PHP
+
+::
+
+	<?php
+
+	$afip = new Afip(array('CUIT' => 11111111111)); //Reemplazar el CUIT
+
+	//Esta línea es solo para probar si funciona pero no es obligatorio
+	$test = $afip->ElectronicBilling->GetDocumentTypes();
+

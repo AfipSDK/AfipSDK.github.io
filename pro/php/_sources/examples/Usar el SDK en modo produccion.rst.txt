@@ -1,0 +1,15 @@
+Usar el SDK en modo producción
+--------------------------------------
+
+.. highlight:: PHP
+
+::
+
+	<?php
+
+	include '../afip.php/src/Afip.php';
+
+	$afip = new Afip(array(
+		'CUIT' => 11111111111,
+		'production' => TRUE
+	));

@@ -1,0 +1,5 @@
+Crear Factura de Crédito electrónica A
+--------------------------------------
+
+.. literalinclude:: code/Crear Factura de Crédito electrónica A.php
+   :language: php

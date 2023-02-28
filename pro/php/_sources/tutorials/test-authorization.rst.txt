@@ -1,0 +1,31 @@
+.. _tutorial_test_authorization:
+
+Autorizar a un web service de testing
+=======================================
+
+Para que los certificados puedan acceder a un web service se debe crear una autorización, esto se hace de la siguiente manera:
+
+Dentro de "WSASS - Autogestión Certificados Homologación", que ya explicamos cómo ingresar anteriormente en :ref:`tutorial_test_certificate`, debemos ir a "Crear autorización a servicio"
+
+.. figure:: ../_static/images/test-authorization/1.png
+    :target: ../_static/images/test-authorization/1.png
+
+Allí dentro en "1. Nombre simbólico del DN a autorizar" debemos seleccionar el certificado que queremos autorizar.
+
+En "3. CUIT representado" debemos ingresar el CUIT con el cual queremos utilizar el web service. En modo testing recomendamos usar el CUIT propio para no crear confusión.
+
+Y en "5. Servicio al que desea acceder" debemos elegir el web service a utilizar.`
+
+Con todo esto listo debemos presionar en "Crear autorización de acceso"
+
+Por ejemplo para autorizar al Web service de factura electrónica me quedaría así
+
+.. figure:: ../_static/images/test-authorization/2.png
+    :target: ../_static/images/test-authorization/2.png
+
+Luego ingresamos en "Autorizaciones" para verificar que se creó la autorización correctamente
+
+.. figure:: ../_static/images/test-authorization/3.png
+    :target: ../_static/images/test-authorization/3.png
+
+Eso sería todo, ya estamos listos para usar el certificado con el web service autorizado

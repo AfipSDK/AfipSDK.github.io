@@ -1,0 +1,31 @@
+Implementación en Magento
+=========================
+
+1 - Ejecutar el siguiente comando en tu proyecto:
+
+``composer require afipsdk/afip.php``
+
+2 - Ir a ``ruta/a/tu/proyecto/vendor/afipsdk/afip.php/src/Afip_res`` y reemplazar los archivos ``cert`` y ``key`` por el certificado y key generados. Si aún no los has generado en la sección :ref:`tutorials` se explica cómo hacerlo.
+
+3 - En los controladores donde utilices la librería debes agregar:
+ 
+.. highlight:: PHP
+
+::
+
+	<?php
+
+	use Afip;
+
+3 - Eso es todo, ahora solo queda crear una instancia de la clase donde la necesites:
+
+.. highlight:: PHP
+
+::
+
+	<?php
+
+	$afip = new Afip(array('CUIT' => 11111111111)); //Reemplazar el CUIT
+
+	//Esta línea es solo para probar si funciona pero no es obligatorio
+	$test = $afip->ElectronicBilling->GetDocumentTypes();

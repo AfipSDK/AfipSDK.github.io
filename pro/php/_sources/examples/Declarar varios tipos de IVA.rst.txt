@@ -1,0 +1,5 @@
+Declarar varios tipos de IVA
+----------------------------
+
+.. literalinclude:: code/Declarar varios tipos de IVA.php
+   :language: php

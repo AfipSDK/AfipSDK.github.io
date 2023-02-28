@@ -1,0 +1,5 @@
+Obtener información de Factura B ya emitida
+-------------------------------------------
+
+.. literalinclude:: code/Obtener información de Factura B ya emitida.js
+   :language: javascript

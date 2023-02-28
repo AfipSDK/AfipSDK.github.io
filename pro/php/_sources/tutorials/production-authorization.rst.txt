@@ -1,0 +1,46 @@
+.. _tutorial_production_authorization:
+
+Autorizar a un web service de producción
+==========================================
+
+Para Autorizar a que se pueda acceder a un web service de producción con un certificado previamente creado debemos ingresar a "Administrador de Relaciones de Clave Fiscal" dentro de nuestro escritorio de AFIP
+
+.. figure:: ../_static/images/production-authorization/1.png
+    :target: ../_static/images/production-authorization/1.png
+
+En caso de poder administrar las cuentas de varios contribuyentes desde nuestro escritorio deberemos elegir el que queremos administrar.
+
+.. figure:: ../_static/images/production-authorization/2.png
+    :target: ../_static/images/production-authorization/2.png
+
+Ahora debemos ir a "Nueva Relación"
+
+.. figure:: ../_static/images/production-authorization/3.png
+    :target: ../_static/images/production-authorization/3.png
+
+Allí dentro presionamos "Buscar"
+
+.. figure:: ../_static/images/production-authorization/4.png
+    :target: ../_static/images/production-authorization/4.png
+
+Abrimos "AFIP > Web Services" y elegimos el web service que queremos autorizar
+
+.. figure:: ../_static/images/production-authorization/5.png
+    :target: ../_static/images/production-authorization/5.png
+
+Luego presionamos en el segundo botón de "Buscar"
+
+.. figure:: ../_static/images/production-authorization/6.png
+    :target: ../_static/images/production-authorization/6.png
+
+Elegimos el certificado que queremos autorizar y le damos a "Confirmar"
+
+.. figure:: ../_static/images/production-authorization/7.png
+    :target: ../_static/images/production-authorization/7.png
+
+Nuevamente le damos a "Confirmar"
+
+.. figure:: ../_static/images/production-authorization/8.png
+    :target: ../_static/images/production-authorization/8.png
+
+Y listo ya podemos utilizar el web service que autorizamos con el certificado elegido.
