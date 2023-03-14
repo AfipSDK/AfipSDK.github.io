@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Obtener certificado de testing &mdash; documentación de Afip SDK PHP - 0.1</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.png"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=UA-121828165-1"></script>
+        <script src="../_static/js/tracking.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="Autorizar a un web service de testing" href="test-authorization.html" />
+    <link rel="prev" title="Tutoriales para la página AFIP" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #5f4d93" >
+            <a href="../index.html" class="icon icon-home"> Afip SDK PHP
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../examples/index.html">Ejemplos de uso</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../examples/Crear%20Factura%20A.html">Crear Factura A</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/Crear%20Factura%20B.html">Crear Factura B</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/Crear%20Factura%20C.html">Crear Factura C</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/Crear%20Factura%20de%20Credito%20electronica%20A.html">Crear Factura de Crédito electrónica A</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/Crear%20Factura%20de%20Credito%20electronica%20B.html">Crear Factura de Crédito electrónica B</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/Crear%20Factura%20de%20Credito%20electronica%20C.html">Crear Factura de Crédito electrónica C</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/Obtener%20el%20numero%20de%20ultima%20Factura%20A.html">Obtener el número de ultima Factura A</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/Obtener%20el%20numero%20de%20ultima%20Factura%20B.html">Obtener el número de ultima Factura B</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/Obtener%20el%20numero%20de%20ultima%20Factura%20C.html">Obtener el número de ultima Factura C</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/Obtener%20informacion%20de%20Factura%20A%20ya%20emitida.html">Obtener información de Factura A ya emitida</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/Obtener%20informacion%20de%20Factura%20B%20ya%20emitida.html">Obtener información de Factura B ya emitida</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/Obtener%20informacion%20de%20Factura%20C%20ya%20emitida.html">Obtener información de Factura C ya emitida</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/Crear%20Nota%20de%20Credito%20A.html">Crear Nota de Crédito A</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/Crear%20Nota%20de%20Credito%20B.html">Crear Nota de Crédito B</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/Crear%20Nota%20de%20Credito%20C.html">Crear Nota de Crédito C</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/Obtener%20datos%20del%20padron%20alcance%204.html">Obtener datos del padrón alcance 4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/Obtener%20datos%20del%20padron%20alcance%205.html">Obtener datos del padrón alcance 5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/Obtener%20datos%20del%20padron%20alcance%2010.html">Obtener datos del padrón alcance 10</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/Obtener%20datos%20del%20padron%20alcance%2013.html">Obtener datos del padrón alcance 13</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/Obtener%20numero%20para%20el%20codigo%20de%20barras.html">Obtener número para el código de barras</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/Cambiar%20nombre%20o%20ruta%20de%20archivo%20cert.html">Cambiar nombre o ruta de archivo cert</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/Cambiar%20nombre%20o%20ruta%20de%20archivo%20key.html">Cambiar nombre o ruta de archivo key</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/Cambiar%20carpeta%20donde%20se%20guardan%20los%20Token.html">Cambiar carpeta donde se guardan los Token</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/Usar%20el%20SDK%20en%20modo%20produccion.html">Usar el SDK en modo producción</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../examples/Declarar%20varios%20tipos%20de%20IVA.html">Declarar varios tipos de IVA</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../frameworks/index.html">Implementación en Frameworks y Plataformas</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../frameworks/laravel.html">Implementación en Laravel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../frameworks/symfony.html">Implementación en Symfony</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../frameworks/codeigniter.html">Implementación en CodeIgniter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../frameworks/cakephp.html">Implementación en CakePHP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../frameworks/yii.html">Implementación en Yii</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../frameworks/magento.html">Implementación en Magento</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../frameworks/wordpress.html">Implementación en WordPress</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Tutoriales para la página AFIP</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Obtener certificado de testing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="test-authorization.html">Autorizar a un web service de testing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="test-add-administration.html">Habilitar administrador de certificados de testing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="production-certificate.html">Obtener certificado de producción</a></li>
+<li class="toctree-l2"><a class="reference internal" href="production-authorization.html">Autorizar a un web service de producción</a></li>
+<li class="toctree-l2"><a class="reference internal" href="production-add-administration.html">Habilitar administrador de certificados de producción</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../generic_web_service.html">Integrar otro web service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../errors.html">Solución a errores más frecuentes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Preguntas frecuentes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #5f4d93" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Afip SDK PHP</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="index.html">Tutoriales para la página AFIP</a> &raquo;</li>
+      <li>Obtener certificado de testing</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="obtener-certificado-de-testing">
+<span id="tutorial-test-certificate"></span><h1>Obtener certificado de testing<a class="headerlink" href="#obtener-certificado-de-testing" title="Enlazar permanentemente con este título"></a></h1>
+<p>Lo primero que debemos hacer es generar un Certificate Signing Request (CSR). Este archivo CSR nos servirá para pedir el certificado en la página de AFIP.</p>
+<p>Para generar el CSR debemos tener instalado el OpenSLL, el cual ya viene en los sistemas Linux. Para Windows se puede descargar desde <a class="reference external" href="https://sourceforge.net/projects/openssl/">https://sourceforge.net/projects/openssl/</a>, una vez descargado copiar la carpeta <code class="docutils literal notranslate"><span class="pre">bin</span></code> en <code class="docutils literal notranslate"><span class="pre">C:\</span></code> con el nombre <code class="docutils literal notranslate"><span class="pre">OpenSSL</span></code>.</p>
+<p>Ahora debemos abrir una consola. En Windows se debe abrir en modo administrador y navegar hacia <code class="docutils literal notranslate"><span class="pre">C:\OpenSSL</span></code></p>
+<p>Dentro de la consola lo primero que debemos ejecutar es el siguiente comando para generar el archivo key.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>openssl genrsa -out <span class="o">[</span>nombre de archivo para la key<span class="o">]</span> <span class="m">2048</span>
+</pre></div>
+</div>
+<p>Reemplazando:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">[nombre</span> <span class="pre">de</span> <span class="pre">archivo</span> <span class="pre">para</span> <span class="pre">la</span> <span class="pre">key]</span></code> con el nombre que queres que se guarde el archivo.</p></li>
+</ul>
+</div></blockquote>
+<p>Este archivo key es muy importante porque representa la «contraseña» con la que va a funcionar el certificado así que no debemos perderlo.</p>
+<p>Por ejemplo yo voy a generarlo de la siguiente forma</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>openssl genrsa -out keytest <span class="m">2048</span>
+</pre></div>
+</div>
+<p>De esta forma el nombre de mi archivo key seria <code class="docutils literal notranslate"><span class="pre">keytest</span></code></p>
+<p>Una vez generada la key estamos listos para generar el CSR. Para ello debemos ejecutar el siguiente comando</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>openssl req -new -key <span class="o">[</span>nombre de archivo para la key<span class="o">]</span> -subj <span class="s2">&quot;/C=AR/O=[nombre de la empresa]/CN=[nombre del certificado]/serialNumber=CUIT [CUIT]&quot;</span> -out <span class="o">[</span>nombre de archivo para el CSR<span class="o">]</span>
+</pre></div>
+</div>
+<p>Reemplazando:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">[nombre</span> <span class="pre">de</span> <span class="pre">archivo</span> <span class="pre">para</span> <span class="pre">la</span> <span class="pre">key]</span></code> con el nombre del archivo key generado anteriormente.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[nombre</span> <span class="pre">de</span> <span class="pre">la</span> <span class="pre">empresa]</span></code> con el nombre de la empresa para quien es el certificado. En testing recomendamos utilizar el nombre de uno para no generar confusiones.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[nombre</span> <span class="pre">del</span> <span class="pre">certificado]</span></code> con el nombre que quieres que tenga el certificado. Solo se pueden utilizar letras y números. Esto es a modo de que puedas reconocerlo luego si generas varios certificados para diferentes sistemas</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[CUIT]</span></code> con el CUIT de la empresa para quien es el certificado. De nuevo, en testing recomendamos usar el CUIT de uno para no generar confusiones.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[nombre</span> <span class="pre">de</span> <span class="pre">archivo</span> <span class="pre">para</span> <span class="pre">el</span> <span class="pre">CSR]</span></code> con el nombre que quieres que se guarde el archivo CSR</p></li>
+</ul>
+</div></blockquote>
+<p>Por ejemplo yo lo generaría de la siguiente forma</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>openssl req -new -key keytest -subj <span class="s2">&quot;/C=AR/O=Mi nombre/CN=Test1/serialNumber=CUIT 11111111111&quot;</span> -out csr-test1
+</pre></div>
+</div>
+<p>Donde en «Mi nombre» pondría mi nombre (valga la redundancia) y en «11111111111» podía mi CUIT/CUIL</p>
+<p>Teniendo el archivos CSR ya podemos dirigirnos a la página de Afip para generar el certificado.</p>
+<p>Dentro de nuestro escritorio de AFIP debemos ingresar en «WSASS - Autogestión Certificados Homologación»</p>
+<figure class="align-default">
+<a class="reference external image-reference" href="../_static/images/test-certificate/1.png"><img alt="../_images/15.png" src="../_images/15.png" /></a>
+</figure>
+<p>En caso de no tener esta aplicación en tu escritorio debes ver el tutorial <a class="reference internal" href="test-add-administration.html#tutorial-test-add-aministration"><span class="std std-ref">Habilitar administrador de certificados de testing</span></a></p>
+<p>Dentro de esta aplicación debemos ir a «Nuevo Certificado»</p>
+<figure class="align-default">
+<a class="reference external image-reference" href="../_static/images/test-certificate/2.png"><img alt="../_images/25.png" src="../_images/25.png" /></a>
+</figure>
+<p>Alli en «1. Nombre simbólico del DN» debemos colocar el nombre que le pusimos el certificado dentro del CSR.</p>
+<p>En «2. Solicitud del certificado en formato PKCS#10» debemos pegar el contenido de nuestro CSR.</p>
+<p>Y luego apretar «Crear DN y obtener certificado». En mi caso quedaría así</p>
+<figure class="align-default">
+<a class="reference external image-reference" href="../_static/images/test-certificate/3.png"><img alt="../_images/35.png" src="../_images/35.png" /></a>
+</figure>
+<p>Y debajo se nos generara el certificado, este debemos guardarlo en nuestra computadora junto con la key para usarlo luego en la librería. El archivo CSR ya no lo necesitaremos.</p>
+<p>Ahora lo que nos queda por hacer es autorizar a que con este certificado se pueda acceder al/los web service/s que queramos usar. <a class="reference internal" href="test-authorization.html#tutorial-test-authorization"><span class="std std-ref">Autorizar a un web service de testing</span></a></p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
+        <a href="index.html" class="btn btn-neutral float-left" title="Tutoriales para la página AFIP" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="test-authorization.html" class="btn btn-neutral float-right" title="Autorizar a un web service de testing" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Derechos de autor 2023, Afip SDK.</p>
+  </div>
+
+  Compilado con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

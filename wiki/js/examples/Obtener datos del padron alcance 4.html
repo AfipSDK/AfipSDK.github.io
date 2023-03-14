@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Obtener datos del padrón alcance 4 &mdash; documentación de Afip SDK JS - 0.1</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.png"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=UA-121828165-1"></script>
+        <script src="../_static/js/tracking.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="Obtener datos del padrón alcance 5" href="Obtener%20datos%20del%20padron%20alcance%205.html" />
+    <link rel="prev" title="Crear Nota de Crédito C" href="Crear%20Nota%20de%20Credito%20C.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #5f4d93" >
+            <a href="../index.html" class="icon icon-home"> Afip SDK JS
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Ejemplos de uso</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Crear%20Factura%20A.html">Crear Factura A</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Crear%20Factura%20B.html">Crear Factura B</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Crear%20Factura%20C.html">Crear Factura C</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Crear%20Factura%20de%20Credito%20electronica%20A.html">Crear Factura de Crédito electrónica A</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Crear%20Factura%20de%20Credito%20electronica%20B.html">Crear Factura de Crédito electrónica B</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Crear%20Factura%20de%20Credito%20electronica%20C.html">Crear Factura de Crédito electrónica C</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Obtener%20el%20numero%20de%20ultima%20Factura%20A.html">Obtener el número de ultima Factura A</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Obtener%20el%20numero%20de%20ultima%20Factura%20B.html">Obtener el número de ultima Factura B</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Obtener%20el%20numero%20de%20ultima%20Factura%20C.html">Obtener el número de ultima Factura C</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Obtener%20informacion%20de%20Factura%20A%20ya%20emitida.html">Obtener información de Factura A ya emitida</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Obtener%20informacion%20de%20Factura%20B%20ya%20emitida.html">Obtener información de Factura B ya emitida</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Obtener%20informacion%20de%20Factura%20C%20ya%20emitida.html">Obtener información de Factura C ya emitida</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Crear%20Nota%20de%20Credito%20A.html">Crear Nota de Crédito A</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Crear%20Nota%20de%20Credito%20B.html">Crear Nota de Crédito B</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Crear%20Nota%20de%20Credito%20C.html">Crear Nota de Crédito C</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Obtener datos del padrón alcance 4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Obtener%20datos%20del%20padron%20alcance%205.html">Obtener datos del padrón alcance 5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Obtener%20datos%20del%20padron%20alcance%2010.html">Obtener datos del padrón alcance 10</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Obtener%20datos%20del%20padron%20alcance%2013.html">Obtener datos del padrón alcance 13</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Obtener%20numero%20para%20el%20codigo%20de%20barras.html">Obtener número para el código de barras</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Cambiar%20nombre%20o%20ruta%20de%20archivo%20cert.html">Cambiar nombre o ruta de archivo cert</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Cambiar%20nombre%20o%20ruta%20de%20archivo%20key.html">Cambiar nombre o ruta de archivo key</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Cambiar%20carpeta%20donde%20se%20guardan%20los%20Token.html">Cambiar carpeta donde se guardan los Token</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Usar%20el%20SDK%20en%20modo%20produccion.html">Usar el SDK en modo producción</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Declarar%20varios%20tipos%20de%20IVA.html">Declarar varios tipos de IVA</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/index.html">Tutoriales para la página AFIP</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/test-certificate.html">Obtener certificado de testing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/test-authorization.html">Autorizar a un web service de testing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/test-add-administration.html">Habilitar administrador de certificados de testing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/production-certificate.html">Obtener certificado de producción</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/production-authorization.html">Autorizar a un web service de producción</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorials/production-add-administration.html">Habilitar administrador de certificados de producción</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../generic_web_service.html">Integrar otro web service</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../errors.html">Solución a errores más frecuentes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">Preguntas frecuentes</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #5f4d93" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Afip SDK JS</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="index.html">Ejemplos de uso</a> &raquo;</li>
+      <li>Obtener datos del padrón alcance 4</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="obtener-datos-del-padron-alcance-4">
+<h1>Obtener datos del padrón alcance 4<a class="headerlink" href="#obtener-datos-del-padron-alcance-4" title="Enlazar permanentemente con este título"></a></h1>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="kd">const</span> <span class="nx">Afip</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;@afipsdk/afip.js&#39;</span><span class="p">);</span>
+
+<span class="kd">const</span> <span class="nx">afip</span> <span class="o">=</span> <span class="ow">new</span> <span class="nx">Afip</span><span class="p">({</span> <span class="s1">&#39;CUIT&#39;</span><span class="o">:</span> <span class="mf">11111111111</span> <span class="p">});</span>
+
+<span class="p">(</span><span class="k">async</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+	<span class="cm">/**</span>
+<span class="cm">	 * CUIT a consultar</span>
+<span class="cm">	 **/</span>
+	<span class="kd">const</span> <span class="nx">cuit</span> <span class="o">=</span> <span class="mf">30500001735</span><span class="p">;</span>
+
+	<span class="cm">/**</span>
+<span class="cm">	 * Obtenemos los datos del contribuyente</span>
+<span class="cm">	 **/</span>
+	<span class="kd">const</span> <span class="nx">datos</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">afip</span><span class="p">.</span><span class="nx">RegisterScopeFour</span><span class="p">.</span><span class="nx">getTaxpayerDetails</span><span class="p">(</span><span class="nx">cuit</span><span class="p">);</span>
+
+	<span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nx">datos</span><span class="p">){</span>
+		<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;El contribuyente no existe en el padrón alcance 4.&#39;</span><span class="p">);</span>
+	<span class="p">}</span>
+	<span class="k">else</span><span class="p">{</span>
+		<span class="cm">/**</span>
+<span class="cm">		 * Mostramos por pantalla los datos del contribuyente</span>
+<span class="cm">		 **/</span>
+		<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">datos</span><span class="p">);</span>
+	<span class="p">}</span>
+<span class="p">})();</span>
+</pre></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
+        <a href="Crear%20Nota%20de%20Credito%20C.html" class="btn btn-neutral float-left" title="Crear Nota de Crédito C" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="Obtener%20datos%20del%20padron%20alcance%205.html" class="btn btn-neutral float-right" title="Obtener datos del padrón alcance 5" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Derechos de autor 2023, Afip SDK.</p>
+  </div>
+
+  Compilado con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
