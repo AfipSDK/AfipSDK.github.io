@@ -1,5 +1,0 @@
-Crear Factura A
----------------
-
-.. literalinclude:: code/Crear Factura A.js
-   :language: javascript

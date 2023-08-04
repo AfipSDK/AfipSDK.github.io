@@ -1,5 +1,0 @@
-Cambiar carpeta donde se guardan los Token
-------------------------------------------
-
-.. literalinclude:: code/Cambiar carpeta donde se guardan los Token.js
-   :language: javascript

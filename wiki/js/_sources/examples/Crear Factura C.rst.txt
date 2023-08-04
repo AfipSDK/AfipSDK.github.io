@@ -1,5 +1,0 @@
-Crear Factura C
----------------
-
-.. literalinclude:: code/Crear Factura C.js
-   :language: javascript

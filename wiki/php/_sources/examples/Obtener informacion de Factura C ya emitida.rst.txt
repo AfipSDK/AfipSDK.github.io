@@ -1,5 +1,0 @@
-Obtener información de Factura C ya emitida
--------------------------------------------
-
-.. literalinclude:: code/Obtener información de Factura C ya emitida.php
-   :language: php

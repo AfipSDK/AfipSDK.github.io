@@ -1,5 +1,0 @@
-Obtener datos del padrón alcance 4
---------------------------------------
-
-.. literalinclude:: code/Obtener datos del padrón alcance 4.js
-   :language: javascript

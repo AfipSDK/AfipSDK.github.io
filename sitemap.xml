@@ -9,12 +9,4 @@
   <loc>https://afipsdk.com/</loc>
   <priority>1.00</priority>
 </url>
-<url>
-  <loc>https://afipsdk.com/wiki/php/</loc>
-  <priority>0.99</priority>
-</url>
-<url>
-  <loc>https://afipsdk.com/wiki/js/</loc>
-  <priority>0.99</priority>
-</url>
 </urlset>

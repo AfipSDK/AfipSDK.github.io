@@ -1,5 +1,0 @@
-Obtener número para el código de barras
----------------------------------------
-
-.. literalinclude:: code/Obtener número para el código de barras.php
-   :language: php

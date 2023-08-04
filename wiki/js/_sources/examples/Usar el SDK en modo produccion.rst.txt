@@ -1,5 +1,0 @@
-Usar el SDK en modo producción
-------------------------------
-
-.. literalinclude:: code/Usar el SDK en modo producción.js
-   :language: javascript

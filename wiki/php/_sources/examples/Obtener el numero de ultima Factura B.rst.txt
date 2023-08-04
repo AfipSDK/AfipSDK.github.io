@@ -1,5 +1,0 @@
-Obtener el número de ultima Factura B
--------------------------------------
-
-.. literalinclude:: code/Obtener el número de ultima Factura B.php
-   :language: php

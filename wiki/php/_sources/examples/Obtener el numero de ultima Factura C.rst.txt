@@ -1,5 +1,0 @@
-Obtener el número de ultima Factura C
--------------------------------------
-
-.. literalinclude:: code/Obtener el número de ultima Factura C.php
-   :language: php

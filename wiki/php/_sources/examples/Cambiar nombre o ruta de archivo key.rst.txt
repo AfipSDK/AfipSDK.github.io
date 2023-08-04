@@ -1,5 +1,0 @@
-Cambiar nombre o ruta de archivo key
-------------------------------------
-
-.. literalinclude:: code/Cambiar nombre o ruta de archivo key.php
-   :language: php

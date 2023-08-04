@@ -1,5 +1,0 @@
-Crear Nota de Crédito B
------------------------
-
-.. literalinclude:: code/Crear Nota de Crédito B.php
-   :language: php
