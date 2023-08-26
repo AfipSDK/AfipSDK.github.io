@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/prism.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
 		<meta name="description" content="Afip SDK es la forma más rápida y simple de conectarse con los Web Services de AFIP">
@@ -68,29 +69,80 @@
 		fbq('track', 'PageView');
 		</script>
 	</head>
-	<body class="is-preload">
-
+	<body>
 		<!-- Wrapper -->
 			<div id="wrapper">
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<span class="logo"><img src="images/logo.png" alt="logo" /></span>
-						<h1>Afip SDK</h1>
-						<p>
-							Con más de <b>50.000 descargas</b> en sus versiones de PHP y Node, desde el 2017 Afip SDK es la librería elegida por los desarrolladores para integrar sus plataformas con AFIP. 
-						</p>
+						<div class="row">
+							<div class="col-12-small col-12-medium col-6 description">
+								<h1>
+									<span class="logo"><img src="images/logo.png" alt="logo" /></span><span class="label">Afip SDK</span>
+								</h1>
+								
+								<p>
+									Con más de <b>50.000 descargas</b> en sus versiones de PHP y Node, desde el 2017 Afip SDK es la librería elegida por los desarrolladores para integrar sus plataformas con AFIP. 
+								</p>
+								
+								<a href="https://docs.afipsdk.com/" target="_blank" class="button">Ver documentación</a>
+							</div>
+							<div class="col-12-small col-12-medium col-6">
+								<div class="code-tabs">
+									<div class="row tabs">
+										<div class="col-6 active" data-lang="js">
+											<img src="images/file_type_js.svg" alt="js" /><span class="file">Crear factura B.js</span>
+										</div>
+										<div class="col-6" data-lang="php">
+											<img src="images/php_elephant_pink.svg" alt="php" /><span class="file">Crear factura B.php</span>
+										</div>
+									</div>
+									<pre class="line-numbers language-js active" style="white-space:pre-wrap;">
+										<code>
+											const Afip = require('@afipsdk/afip.js');
 
-						<ul class="actions special">
-							<li>
-								<a href="https://github.com/AfipSDK/afip.php" class="button">Afip SDK Para PHP</a>
-							</li>
-							<li>
-								<a href="https://github.com/AfipSDK/afip.js" class="button">Afip SDK Para Node</a>
-							</li>
-						</ul>
-						<p>
-						</p>
+											const afip = new Afip({ CUIT: cuit });
+
+											const data = {
+												'PtoVta' 	: 1,  // Punto de venta
+												'CbteTipo' 	: 6,  // Tipo de comprobante
+												'ImpTotal' 	: 121, // Importe total
+												// ... etc.
+											};
+
+											const res = await afip.ElectronicBilling.createVoucher(data);
+
+											console.log({ 
+												'cae' : res['CAE'], 
+												'vencimiento' : res['CAEFchVto'] 
+											});
+										</code>
+									</pre>
+									<pre class="line-numbers language-php" style="white-space:pre-wrap;">
+										<code>
+											use Afip;
+
+											$afip = new Afip(array('CUIT' => $cuit));
+
+											$data = array(
+												'PtoVta' 	=> 1, // Punto de venta
+												'CbteTipo' 	=> 6, // Tipo de comprobante
+												'ImpTotal' 	=> 121, // Importe total
+												// ... etc.
+											);
+
+											$res = $afip->ElectronicBilling->CreateVoucher($data);
+
+											var_dump(array(
+												'cae' => $res['CAE'], 
+												'vencimiento' => $res['CAEFchVto']
+											));
+										</code>
+									</pre>
+								</div>
+
+							</div>
+						</div>
 					</header>
 
 				<!-- Nav -->
@@ -180,5 +232,17 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/prism.js"></script>
+
+			<script>
+				$('.tabs > div').on('click', (e) => {
+					$('.tabs > div').removeClass('active');
+					$('.code-tabs pre[class*="language-"]').removeClass('active');
+
+					$(`.code-tabs pre[class*="language-${$(e.target).attr('data-lang')}"]`).addClass('active');
+					$(e.target).addClass('active');
+				})
+
+			</script>
 	</body>
 </html>

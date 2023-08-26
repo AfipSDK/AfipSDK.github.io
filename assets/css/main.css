@@ -1,6 +1,94 @@
 @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400";
 
 /* Custom CSS */
+.code-tabs {
+	font-size: 12px;
+}
+
+.tabs.row{
+	margin-left: 0;
+}
+
+
+.description {
+	text-align: center;
+}
+
+.description > p {
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+.description .logo {
+	width: 90px;
+	display: inline-block!important;
+	margin: 0 !important;
+	vertical-align: middle;
+	margin-right: 20px !important;
+}
+
+.description .logo > img {
+	margin: 0!important;
+	width: 100%;
+	max-width: 100% !important;
+}
+
+.description .label {
+	vertical-align: middle;
+}
+
+.tabs > div {
+	background: #343531;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	font-size: 13px;
+	padding: 2px 10px;
+	width: auto !important;
+	cursor: pointer;
+	margin-right: 1px;
+}
+
+.tabs > div > img {
+	height: 13px;
+	vertical-align: middle;
+	padding-right: 6px;
+	pointer-events: none;
+}
+
+.tabs > div > .file {
+	vertical-align: middle;
+	pointer-events: none;
+}
+
+.tabs div.active {
+	background: #272822;
+}
+
+
+.code-tabs code {
+	overflow-x: visible;
+}
+
+.code-tabs pre[class*="language-"] {
+	white-space: pre !important;
+	margin: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	display: none;
+}
+
+.code-tabs pre[class*="language-"].active {
+	display: block;
+}
+
+.code-tabs pre[class*="language-"].line-numbers {
+	padding-left: 3.3em;
+}
+
+.code-tabs pre[class*="language-"].line-numbers > code {
+	border: none;
+	padding: 0;
+}
 
 .prefered-plan-col {
 	border: 1px solid #5f4d93;
@@ -102,6 +190,11 @@ img.sm {
 
 #header.alt.pro {
 	padding: 4em 5em;
+}
+
+
+#header.alt > * {
+	opacity: 1 !important;
 }
 
 .statistics [class^='fa']{
@@ -3325,7 +3418,7 @@ input, select, textarea {
 		}
 
 		#header.alt {
-			padding: 7em 5em 4em 5em ;
+			padding: 5em 5em 4em 5em ;
 		}
 
 			#header.alt h1 {
