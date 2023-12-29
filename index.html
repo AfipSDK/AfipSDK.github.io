@@ -82,7 +82,7 @@
 								</h1>
 								
 								<p>
-									Con más de <b>50.000 descargas</b> en sus versiones de PHP y Node, desde el 2017 Afip SDK es la librería elegida por los desarrolladores para integrar sus plataformas con AFIP. 
+									Con más de <b>60.000 descargas</b> en sus versiones de PHP, Node y Ruby, desde el 2017 Afip SDK es la librería elegida por los desarrolladores para integrar sus plataformas con AFIP. 
 								</p>
 								
 								<a href="https://docs.afipsdk.com/" target="_blank" class="button margin-b-20">Ver documentación</a>
@@ -95,6 +95,9 @@
 										</div>
 										<div class="col-6" data-lang="php">
 											<img src="images/php_elephant_pink.svg" alt="php" /><span class="file">Crear factura.php</span>
+										</div>
+										<div class="col-6" data-lang="ruby">
+											<img src="images/ruby.svg" alt="ruby" /><span class="file">Crear factura.rb</span>
 										</div>
 									</div>
 									<pre class="line-numbers language-js active" style="white-space:pre-wrap;">
@@ -137,6 +140,27 @@
 												'cae' => $res['CAE'], 
 												'vencimiento' => $res['CAEFchVto']
 											));
+										</code>
+									</pre>
+									<pre class="line-numbers language-ruby" style="white-space:pre-wrap;">
+										<code>
+											require "afip"
+
+											afip = Afip.new({ "CUIT": 20409378472 })
+
+											data = {
+												"PtoVta": 1, # Punto de venta
+												"CbteTipo": 6, # Tipo de comprobante
+												"ImpTotal": 121, # Importe total
+												# ... etc.
+											}
+
+											res = afip.ElectronicBilling.createVoucher(data)
+
+											puts {
+												"cae": res["CAE"], 
+												"vencimiento": res["CAEFchVto"]
+											}
 										</code>
 									</pre>
 								</div>
@@ -213,6 +237,7 @@
 								<h2>GitHub</h2>
 								<p><a href="https://github.com/afipsdk/afip.php">Afip.php</a> | Repositorio oficial del SKD para PHP</p>
 								<p><a href="https://github.com/afipsdk/afip.js">Afip.js</a> | Repositorio oficial del SKD para JavaScript</p>
+								<p><a href="https://github.com/afipsdk/afip.rb">Afip.rb</a> | Repositorio oficial del SKD para Ruby</p>
 							</header>
 						</section>
 
