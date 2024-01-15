@@ -1,45 +1,8 @@
-@import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400";
+/* @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400"; */
 
 /* Custom CSS */
 .code-tabs {
 	font-size: 12px;
-}
-
-.tabs.row{
-	margin-left: 0;
-}
-
-
-.description {
-	text-align: center;
-}
-
-.description > p {
-	text-align: left;
-	margin-bottom: 20px;
-}
-
-
-.margin-b-20 {
-	margin-bottom: 20px;
-}
-
-.description .logo {
-	width: 90px;
-	display: inline-block!important;
-	margin: 0 !important;
-	vertical-align: middle;
-	margin-right: 20px !important;
-}
-
-.description .logo > img {
-	margin: 0!important;
-	width: 100%;
-	max-width: 100% !important;
-}
-
-.description .label {
-	vertical-align: middle;
 }
 
 .tabs > div {
@@ -68,7 +31,6 @@
 .tabs div.active {
 	background: #272822;
 }
-
 
 .code-tabs code {
 	overflow-x: visible;
@@ -492,7 +454,7 @@ input, select, textarea {
 	}
 
 	body, input, select, textarea {
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		/* font-family: "Source Sans Pro", Helvetica, sans-serif; */
 		font-size: 17pt;
 		font-weight: 300;
 		line-height: 1.65;
