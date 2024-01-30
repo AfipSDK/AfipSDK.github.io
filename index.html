@@ -1,356 +1,329 @@
-<!DOCTYPE HTML>
-<!--
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Afip SDK - Libreria para usar los web services de AFIP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/custom.css" />
-		<link rel="stylesheet" href="assets/css/prism.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Libreria para usar los web services de AFIP - Afip SDK</title>
 
-		<meta name="description" content="Afip SDK es la forma más rápida y simple de conectarse con los Web Services de AFIP">
-
-		<link rel="shortcut icon" sizes="16x16" href="favicon.png">
+    <link rel="shortcut icon" sizes="16x16" href="favicon.png">
 		<link rel="shortcut icon" sizes="32x32" href="faviconx32.png">
-		
-		<meta name="facebook-domain-verification" content="871sr7ffpnbws5bza56x938lgdwcuo" />
 
-		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@afipsdk">
-		<meta name="twitter:creator" content="@afipsdk">
-		<meta name="twitter:title" content="Afip SDK - Libreria para usar los web services de AFIP">
-		<meta name="twitter:description" content="Afip SDK es la forma más rápida y simple de conectarse con los Web Services de AFIP">
-		<meta name="twitter:image" content="https://afipsdk.com/images/og.png">
+    <link
+      href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/custom.css" />
+    <link rel="stylesheet" href="./assets/prism.css" />
+    <script src="./assets/prism.js"></script>
+    <script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  </head>
+  <body class="is-boxed has-animations">
+    <div class="body-wrap">
+      <header class="site-header">
+        <div class="container">
+          <div class="site-header-inner">
+            <div class="brand header-brand">
+              <h1 class="m-0">
+                <a href="#">
+                  <img
+                    class="header-logo-image"
+                    src="./images/logo.png"
+                    alt="Logo"
+                  />
+                </a>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </header>
 
-		<meta property="og:url" content="https://afipsdk.com/">
-		<meta property="og:image" content="https://afipsdk.com/images/og.png">
-		<meta property="og:title" content="Afip SDK - Libreria para usar los web services de AFIP">
-		<meta property="og:description" content="Afip SDK es la forma más rápida y simple de conectarse con los Web Services de AFIP">
+      <main>
+        <section class="hero">
+          <div class="container">
+            <div class="hero-inner">
+              <div class="hero-copy">
+                <h1 class="hero-title mt-0">Afip SDK</h1>
+                <p class="hero-paragraph">
+									Desde su lanzamiento en 2017, Afip SDK ha sido descargada más de 60k veces, consolidándose como la biblioteca preferida entre los desarrolladores para integrar sus plataformas con AFIP.
+                </p>
+                <div class="hero-cta">
+                  <a class="button button-primary" href="https://docs.afipsdk.com/">Documentacion</a>
+                  <a target="_blank" class="lang-logo" href="https://github.com/afipsdk/afip.py"><img alt="python" src="./images/python.svg"></a>
+                  <a target="_blank" class="lang-logo" href="https://github.com/afipsdk/afip.php"><img alt="php" src="./images/php_elephant_pink.svg"></a>
+                  <a target="_blank" class="lang-logo" href="https://github.com/afipsdk/afip.js"><img alt="js" src="./images/file_type_js.svg"></a>
+                  <a target="_blank" class="lang-logo" href="https://github.com/afipsdk/afip.rb"><img alt="ruby" src="./images/ruby.svg"></a>
+                </div>
+              </div>
+              <div class="hero-figure anime-element">
+                <svg
+                  class="placeholder"
+                  width="528"
+                  height="396"
+                  viewBox="0 0 528 396"
+                >
+                  <rect width="528" height="396" style="fill: transparent" />
+                </svg>
+                <div
+                  class="hero-figure-box hero-figure-box-01"
+                  data-rotation="45deg"
+                ></div>
+                <div
+                  class="hero-figure-box hero-figure-box-02"
+                  data-rotation="-45deg"
+                ></div>
+                <div
+                  class="hero-figure-box hero-figure-box-03"
+                  data-rotation="0deg"
+                ></div>
+                <div
+                  class="hero-figure-box hero-figure-box-04"
+                  data-rotation="-135deg"
+                ></div>
+                <div class="hero-figure-box hero-figure-box-05"></div>
+                <div class="hero-figure-box hero-figure-box-06"></div>
+                <div class="hero-figure-box hero-figure-box-07"></div>
+                <div
+                  class="hero-figure-box hero-figure-box-08"
+                  data-rotation="-22deg"
+                ></div>
+                <div
+                  class="hero-figure-box hero-figure-box-09"
+                  data-rotation="-52deg"
+                ></div>
+                <div
+                  class="hero-figure-box hero-figure-box-10"
+                  data-rotation="-50deg"
+                ></div>
+                <div class="code-sample hero-figure-box hero-figure-box-code">
+                  <div class="code-tabs">
+                    <div class="row tabs">
+                      <div class="col-6 active" data-lang="js">
+                        <img src="./images/file_type_js.svg" alt="js" /><span class="file">Factura.js</span>
+                      </div>
+                      <div class="col-6" data-lang="php">
+                        <img src="./images/php_elephant_pink.svg" alt="php" /><span class="file">Factura.php</span>
+                      </div>
+                      <div class="col-6" data-lang="ruby">
+                        <img src="./images/ruby.svg" alt="ruby" /><span class="file">Factura.rb</span>
+                      </div>
+                      <div class="col-6" data-lang="python">
+                        <img src="./images/python.svg" alt="python" /><span class="file">Factura.py</span>
+                      </div>
+                    </div>
+                    <pre class="line-numbers language-js active" style="white-space:pre-wrap;">
+                      <code>
+                        const Afip = require('@afipsdk/afip.js');
+  
+                        const afip = new Afip({ CUIT: 20409378472 });
+  
+                        const data = {
+                          'PtoVta' 	: 1,  // Punto de venta
+                          'CbteTipo' 	: 6,  // Tipo de comprobante
+                          'ImpTotal' 	: 121, // Importe total
+                          // ... etc.
+                        };
+  
+                        const res = await afip.ElectronicBilling.createVoucher(data);
+  
+                        console.log({ 
+                          'cae' : res['CAE'], 
+                          'vencimiento' : res['CAEFchVto'] 
+                        });
+                      </code>
+                    </pre>
+                    <pre class="line-numbers language-php" style="white-space:pre-wrap;">
+                      <code>
+                        use Afip;
+  
+                        $afip = new Afip(array('CUIT' => 20409378472));
+  
+                        $data = array(
+                          'PtoVta' 	=> 1, // Punto de venta
+                          'CbteTipo' 	=> 6, // Tipo de comprobante
+                          'ImpTotal' 	=> 121, // Importe total
+                          // ... etc.
+                        );
+  
+                        $res = $afip->ElectronicBilling->CreateVoucher($data);
+  
+                        var_dump(array(
+                          'cae' => $res['CAE'], 
+                          'vencimiento' => $res['CAEFchVto']
+                        ));
+                      </code>
+                    </pre>
+                    <pre class="line-numbers language-ruby" style="white-space:pre-wrap;">
+                      <code>
+                        require "afip"
+  
+                        afip = Afip.new({ "CUIT": 20409378472 })
+  
+                        data = {
+                          "PtoVta": 1, # Punto de venta
+                          "CbteTipo": 6, # Tipo de comprobante
+                          "ImpTotal": 121, # Importe total
+                          # ... etc.
+                        }
+  
+                        res = afip.ElectronicBilling.createVoucher(data)
+  
+                        puts {
+                          "cae": res["CAE"], 
+                          "vencimiento": res["CAEFchVto"]
+                        }
+                      </code>
+                    </pre>
+                    <pre class="line-numbers language-python" style="white-space:pre-wrap;">
+                      <code>
+                        from afip import Afip
+  
+                        afip = Afip({ "CUIT": 20409378472 })
+  
+                        data = {
+                          "PtoVta": 1, # Punto de venta
+                          "CbteTipo": 6, # Tipo de comprobante
+                          "ImpTotal": 121, # Importe total
+                          # ... etc.
+                        }
+  
+                        res = afip.ElectronicBilling.createVoucher(data)
+  
+                        print({
+                          "cae": res["CAE"], 
+                          "vencimiento": res["CAEFchVto"]
+                        })
+                      </code>
+                    </pre>
+                  </div>
+                </div>
 
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+              </div>
+            </div>
+          </div>
+        </section>
 
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121828165-1"></script>
-		<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+        <section class="features section">
+          <div class="container">
+            <div class="features-inner section-inner has-bottom-divider">
+              <div class="features-wrap">
+                <div class="feature text-center is-revealing">
+                  <div class="feature-inner">
+                    <div class="feature-icon">
+                      <img src="./images/certificado.png" alt="Feature 01" />
+                    </div>
+                    <h4 class="feature-title mt-24">Creacion de certificados</h4>
+                    <p class="text-sm mb-0">
+                      Con el SDK, podes generar certificados y autorizaciones, sin complicaciones adicionales.
+                    </p>
+                  </div>
+                </div>
+                <div class="feature text-center is-revealing">
+                  <div class="feature-inner">
+                    <div class="feature-icon">
+                      <img src="./images/candado.png" alt="Feature 02" />
+                    </div>
+                    <h4 class="feature-title mt-24">Autenticacion sencilla</h4>
+                    <p class="text-sm mb-0">
+                      Se encarga automáticamente de la autenticación, simplificando el proceso para ti.
+                    </p>
+                  </div>
+                </div>
+                <div class="feature text-center is-revealing">
+                  <div class="feature-inner">
+                    <div class="feature-icon">
+                      <img src="./images/configuracion.png" alt="Feature 03" />
+                    </div>
+                    <h4 class="feature-title mt-24">Todos los web services</h4>
+                    <p class="text-sm mb-0">
+                      El SDK te permite utilizar todos los web services de AFIP de manera sencilla y efectiva.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="project section">
+          <div class="container">
+            <div class="project-inner section-inner">
+              <div class="project-header text-center">
+                <h2 class="section-title mt-0">Confian en nosotros</h2>
+              </div>
+              <div class="projects">
+                <p class="customers">
+                  <a target="_blank" class="customer" href="https://anclap.com/"><img alt="anclap" src="./images/customers/anclap.png"></a>
+                  <a target="_blank" class="customer" href="https://www.tiendanube.com/"><img alt="tiendanube" src="./images/customers/tiendanube.png"></a>
+                  <a target="_blank" class="customer" href="https://www.rappi.com/"><img alt="rappi" src="./images/customers/rappi.png"></a>
+                  <a target="_blank" class="customer" href="https://www.ecomm-app.com/"><img alt="ecomm-app" src="./images/customers/ecomm-app.png"></a>
+                  <a target="_blank" class="customer" href="https://www.depilife.com.ar/"><img alt="depilife" src="./images/customers/depilife.png"></a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
-		gtag('config', 'UA-121828165-1');
-		</script>
-		
-		<!-- Hotjar Tracking Code for https://afipsdk.com/ -->
-		<script>
-		(function(h,o,t,j,a,r){
-			h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-			h._hjSettings={hjid:1318538,hjsv:6};
-			a=o.getElementsByTagName('head')[0];
-			r=o.createElement('script');r.async=1;
-			r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-			a.appendChild(r);
-		})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-		</script>
+        <section class="cta section">
+          <div class="cta-inner section-inner">
+            <h3 class="section-title mt-0">¿Alguna duda?</h3>
+            <div class="cta-cta">
+              <a class="button button-primary button-wide-mobile" href="mailto:afipsdk@gmail.com"
+                >Contactanos</a
+              >
+            </div>
+          </div>
+        </section>
+      </main>
 
-		<!-- Facebook Pixel Code -->
-		<script>
-		!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-		n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-		n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-		t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-		document,'script','https://connect.facebook.net/en_US/fbevents.js');
+      <footer class="site-footer">
+        <div class="container">
+          <div class="site-footer-inner">
+            <div class="brand footer-brand">
+              <a href="#">
+                <img
+                  class="header-logo-image"
+                  src="./images/logo.png"
+                  alt="Logo"
+                />
+              </a>
+            </div>
+            <ul class="footer-links list-reset">
+              <li>
+                <a href="mailto:afipsdk@gmail.com">Contacto</a>
+              </li>
+              <li>
+                <a href="https://docs.afipsdk.com/">Documentacion</a>
+              </li>
+            </ul>
+            <ul class="footer-social-links list-reset">
+            </ul>
+            <div class="footer-copyright">
+              &copy; 2024 DUI LLC, Todos los derechos reservados
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
 
-		fbq('init', '685344108762743');
-		fbq('track', 'PageView');
-		</script>
-	</head>
-	<body>
-		<!-- Wrapper -->
-			<div id="wrapper">
+    <script src="./assets/main.js"></script>
+    <script src="./assets/jquery.min.js"></script>
+    <script>
+      $('.tabs > div').on('click', (e) => {
+        $('.tabs > div').removeClass('active');
+        $('.code-tabs pre[class*="language-"]').removeClass('active');
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<div class="row">
-							<div class="col-12-small col-12-medium col-6 description">
-								<h1>
-									<span class="logo"><img src="images/logo.png" alt="logo" /></span><span class="label">Afip SDK</span>
-								</h1>
-								
-								<p>
-									Con más de 60k descargas desde el 2017, Afip SDK es la librería elegida por los desarrolladores para integrar sus plataformas con AFIP. 
-								</p>
-
-								<a href="https://docs.afipsdk.com/" target="_blank" class="button margin-b-20">Ver documentación</a>
-								
-								<a target="_blank" class="a-clean" href="https://github.com/afipsdk/afip.py"><img alt="python" src="images/python.svg"></a>
-								<a target="_blank" class="a-clean" href="https://github.com/afipsdk/afip.php"><img alt="php" src="images/php_elephant_pink.svg"></a>
-								<a target="_blank" class="a-clean" href="https://github.com/afipsdk/afip.js"><img alt="js" src="images/file_type_js.svg"></a>
-								<a target="_blank" class="a-clean" href="https://github.com/afipsdk/afip.rb"><img alt="ruby" src="images/ruby.svg"></a>
-
-							</div>
-							<div class="col-12-small col-12-medium col-6">
-								<div class="code-tabs">
-									<div class="row tabs">
-										<div class="col-6 active" data-lang="js">
-											<img src="images/file_type_js.svg" alt="js" /><span class="file">Factura.js</span>
-										</div>
-										<div class="col-6" data-lang="php">
-											<img src="images/php_elephant_pink.svg" alt="php" /><span class="file">Factura.php</span>
-										</div>
-										<div class="col-6" data-lang="ruby">
-											<img src="images/ruby.svg" alt="ruby" /><span class="file">Factura.rb</span>
-										</div>
-										<div class="col-6" data-lang="python">
-											<img src="images/python.svg" alt="python" /><span class="file">Factura.py</span>
-										</div>
-									</div>
-									<pre class="line-numbers language-js active" style="white-space:pre-wrap;">
-										<code>
-											const Afip = require('@afipsdk/afip.js');
-
-											const afip = new Afip({ CUIT: 20409378472 });
-
-											const data = {
-												'PtoVta' 	: 1,  // Punto de venta
-												'CbteTipo' 	: 6,  // Tipo de comprobante
-												'ImpTotal' 	: 121, // Importe total
-												// ... etc.
-											};
-
-											const res = await afip.ElectronicBilling.createVoucher(data);
-
-											console.log({ 
-												'cae' : res['CAE'], 
-												'vencimiento' : res['CAEFchVto'] 
-											});
-										</code>
-									</pre>
-									<pre class="line-numbers language-php" style="white-space:pre-wrap;">
-										<code>
-											use Afip;
-
-											$afip = new Afip(array('CUIT' => 20409378472));
-
-											$data = array(
-												'PtoVta' 	=> 1, // Punto de venta
-												'CbteTipo' 	=> 6, // Tipo de comprobante
-												'ImpTotal' 	=> 121, // Importe total
-												// ... etc.
-											);
-
-											$res = $afip->ElectronicBilling->CreateVoucher($data);
-
-											var_dump(array(
-												'cae' => $res['CAE'], 
-												'vencimiento' => $res['CAEFchVto']
-											));
-										</code>
-									</pre>
-									<pre class="line-numbers language-ruby" style="white-space:pre-wrap;">
-										<code>
-											require "afip"
-
-											afip = Afip.new({ "CUIT": 20409378472 })
-
-											data = {
-												"PtoVta": 1, # Punto de venta
-												"CbteTipo": 6, # Tipo de comprobante
-												"ImpTotal": 121, # Importe total
-												# ... etc.
-											}
-
-											res = afip.ElectronicBilling.createVoucher(data)
-
-											puts {
-												"cae": res["CAE"], 
-												"vencimiento": res["CAEFchVto"]
-											}
-										</code>
-									</pre>
-									<pre class="line-numbers language-python" style="white-space:pre-wrap;">
-										<code>
-											from afip import Afip
-
-											afip = Afip({ "CUIT": 20409378472 })
-
-											data = {
-												"PtoVta": 1, # Punto de venta
-												"CbteTipo": 6, # Tipo de comprobante
-												"ImpTotal": 121, # Importe total
-												# ... etc.
-											}
-
-											res = afip.ElectronicBilling.createVoucher(data)
-
-											print({
-												"cae": res["CAE"], 
-												"vencimiento": res["CAEFchVto"]
-											})
-										</code>
-									</pre>
-								</div>
-
-							</div>
-						</div>
-					</header>
-
-				<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li><a href="https://docs.afipsdk.com/" target="_blank">👩‍💻 Documentación</a></li>
-							<!-- <li><a href="#price">🏷️ Precio</a></li> -->
-							<li><a href="#cta"><img src="images/GitHub-Mark-32px.png" alt="GitHub" style="width: 25px;vertical-align: middle;margin-bottom: 3px;" /> GitHub</a></li>
-							<li><a href="#customers">✅ Empresas que lo usan</a></li>
-						</ul>
-					</nav>
-
-				<!-- Main -->
-					<div id="main">
-						<!-- Price -->
-						<!-- <section id="price" class="main special">
-							<header class="major">
-								<h2>Precio</h2>
-							</header>
-
-							<div class="row">
-								<div class="col-6">
-									<div class="prefered-plan-col">
-										<h2>Business</h2>
-										<ul class="licence-features">
-											<li>
-												<i class="far fa-check-circle text-success"></i>
-												Conexion a los web services sin limite
-											</li>
-											<li>
-												<i class="fas fa-life-ring text-success"></i>
-												Soporte y ayuda
-											</li>
-										</ul>
-										<div class="margin-b-15">
-											<p class="price">
-												U$D 35/mes
-											</p>
-											<a href="https://docs.afipsdk.com/" target="_blank" class="button primary">Comenzar</a>
-										</div>
-									</div>
-								</div>
-								<div class="col-6">
-									<h2>Enterprise</h2>
-									<ul class="licence-features">
-										<li>
-											<i class="far fa-check-circle text-success"></i>
-											Conexion a los web services sin limite
-										</li>
-										<li>
-											<i class="fas fa-life-ring text-success"></i>
-											Soporte y ayuda
-										</li>
-										<li class="extra">
-											<i class="far fa-check-circle text-success"></i>
-											API para creacion de PDF
-										</li>
-									</ul>
-									<div class="margin-b-15">
-										<div class="price-clearout">Contactar a afipsdk@gmail.com</div>
-									</div>
-								</div>
-							</div>
-						</section> -->
-						<!-- GitHub -->
-						<section id="cta" class="main special">
-							<header class="major">
-								<h2>GitHub</h2>
-								<p><a href="https://github.com/afipsdk/afip.py">Afip.py</a> | Repositorio oficial del SKD para Python</p>
-								<p><a href="https://github.com/afipsdk/afip.php">Afip.php</a> | Repositorio oficial del SKD para PHP</p>
-								<p><a href="https://github.com/afipsdk/afip.js">Afip.js</a> | Repositorio oficial del SKD para JavaScript</p>
-								<p><a href="https://github.com/afipsdk/afip.rb">Afip.rb</a> | Repositorio oficial del SKD para Ruby</p>
-							</header>
-						</section>
-
-
-						<!-- Customers -->
-						<section id="customers" class="main special">
-							<header class="major">
-								<h2>Algunas empresas que usan el SDK</h2>
-							</header>
-
-							<p class="customers-list">
-								<a target="_blank" href="https://anclap.com/"><img alt="anclap" src="images/customers/anclap.png"></a>
-								<a target="_blank" href="https://www.tiendanube.com/"><img alt="tiendanube" src="images/customers/tiendanube.png"></a>
-								<a target="_blank" href="https://www.rappi.com/"><img alt="rappi" src="images/customers/rappi.png"></a>
-								<a target="_blank" href="https://www.ecomm-app.com/"><img alt="ecomm-app" src="images/customers/ecomm-app.png"></a>
-								<br/>
-								<br/>
-								<br/>
-								<a target="_blank" href="https://weedo.com.ar/"><img alt="weedo" src="images/customers/weedo.png"></a>
-								<a target="_blank" href="https://www.depilife.com.ar/"><img alt="depilife" src="images/customers/depilife.png"></a>
-								<a target="_blank" href="https://softplacesoftware.com.ar/"><img alt="softplacesoftware" src="images/customers/softplacesoftware.png"></a>
-								<a target="_blank" href="http://inta.gob.ar"><img alt="inta" src="images/customers/inta.png"></a>
-								<a target="_blank" href="http://groupitmind.com/"><img alt="groupitmind" src="images/customers/groupitmind.png"></a>
-								<a target="_blank" href="http://gloobes.com/"><img alt="gloobes" src="images/customers/gloobes.png"></a>
-								<a target="_blank" href="https://plen.co/"><img alt="plen.co" src="images/customers/plenco.png"></a>
-								<a target="_blank" href="http://dezavalia.com.ar/"><img alt="dezavalia" src="images/customers/dezavalia.png"></a>
-								<a target="_blank" href="https://jas-software.com.ar/"><img alt="jas-software" src="images/customers/jas-software.png"></a>
-								<a target="_blank" href="https://logic-computers.com.ar/"><img alt="logic-computers" src="images/customers/logic-computers.png"></a>
-								<a target="_blank" href="https://www.sacbunker.com.ar/"><img alt="sacbunker" src="images/customers/sac-bunker.png"></a>
-								<a target="_blank" href="https://sharkinformatica.com/"><img alt="sharkinformatica" src="images/customers/shark-informatica.png"></a>
-								<a target="_blank" href="http://pinpark.com.ar/"><img alt="pinpark" src="images/customers/pinpark.png"></a>
-								<a target="_blank" href="https://www.frigopico.com/"><img alt="frigopico" src="images/customers/frigopico.png"></a>
-								<a target="_blank" href="https://laeconomica.com.ar/"><img alt="laeconomica" src="images/customers/laeconomica.png"></a>
-								<a target="_blank" href="https://www.headers.com.ar/"><img alt="headers" src="images/customers/headers.png"></a>
-								<a target="_blank" href="https://pedraza.com.ar/"><img alt="pedraza" src="images/customers/pedraza.png"></a>
-								<a target="_blank" href="https://www.ceclomas.com/"><img alt="ceclomas" src="images/customers/ceclomas.png"></a>
-								<a target="_blank" href="http://playwebs.net/"><img alt="playwebs" src="images/customers/playwebs.png"></a>
-								<a target="_blank" href="http://optimizarseguridad.com.ar/"><img alt="optimizarseguridad" src="images/customers/optimizarseguridad.jpg"></a>
-								<a target="_blank" href="https://pedrolga.com/"><img alt="pedrolga" src="images/customers/pedrolga.png"></a>
-							</p>
-						</section>
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<h2>¿Porque Afip SDK?</h2>
-							<p>Todo web service deberia contar con su propio SDK ya que programarlo desde cero es una tarea ardua y tediosa que se repetiria cada vez que un desarrollador quiera usar el web service, por eso es que programamos este completo y sencillo SDK para que tu puedas ponerte manos a la obra rapidamente.</p>
-						</section>
-						<section>
-							<h2>¿Buscas ayuda?</h2> 
-							<small> Enviame un correo</small>
-							<dl class="alt">
-								<dt>Email</dt>
-								<dd><a href="mailto:afipsdk@gmail.com">afipsdk@gmail.com</a></dd>
-							</dl>
-						</section>
-						<p class="copyright">Afip SDK | Creador: <a href="https://github.com/afipsdk">Afip SDK</a> | Diseño de pagina: <a href="https://html5up.net">HTML5 UP</a></p>
-					</footer>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script src="assets/js/prism.js"></script>
-
-			<script>
-				$('.tabs > div').on('click', (e) => {
-					$('.tabs > div').removeClass('active');
-					$('.code-tabs pre[class*="language-"]').removeClass('active');
-
-					$(`.code-tabs pre[class*="language-${$(e.target).attr('data-lang')}"]`).addClass('active');
-					$(e.target).addClass('active');
-				})
-
-			</script>
-	</body>
+        $(`.code-tabs pre[class*="language-${$(e.target).attr('data-lang')}"]`).addClass('active');
+        $(e.target).addClass('active');
+      })
+    </script>
+  </body>
 </html>

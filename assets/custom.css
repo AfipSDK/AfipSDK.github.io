@@ -1,0 +1,117 @@
+.header-logo-image {
+    max-height: 90px;
+}
+
+.button-primary {
+    background: #5f4d93;
+    background: linear-gradient(65deg, #5f4d93 0, #685a8f 100%);
+}
+
+.button-primary:hover {
+    background: #685a8f;
+    background: linear-gradient(65deg, #685a8f 0, #6b5f8a 100%);
+}
+
+.lang-logo img{
+    max-height: 40px;
+    display: inline-block;
+}
+
+.tabs{
+	margin-left: 0;
+    text-align: left;
+}
+
+.code-tabs {
+	font-size: 12px;
+}
+
+.tabs > div {
+	background: #343531;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	font-size: 13px;
+	padding: 2px 10px;
+	width: auto !important;
+	cursor: pointer;
+	margin-right: 1px;
+    display: inline-block;
+    line-height: 24px;
+}
+
+.tabs > div > img {
+	height: 13px;
+    display: inline-block;
+	vertical-align: middle;
+	padding-right: 6px;
+	pointer-events: none;
+}
+
+.tabs > div > .file {
+	vertical-align: middle;
+	pointer-events: none;
+}
+
+.tabs div.active {
+	background: #272822;
+}
+
+.code-tabs code {
+	overflow-x: visible;
+}
+
+.code-tabs pre[class*="language-"] {
+	white-space: pre !important;
+	margin: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	display: none;
+}
+
+.code-tabs pre[class*="language-"].active {
+	display: block;
+}
+
+.code-tabs pre[class*="language-"].line-numbers {
+	padding-left: 3.3em;
+}
+
+.code-tabs pre[class*="language-"].line-numbers > code {
+	border: none;
+	padding: 0;
+}
+
+.code-sample {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.hero-figure-box-code {
+    -webkit-box-shadow: -20px 32px 64px rgba(0, 0, 0, 0.25);
+    box-shadow: -20px 32px 64px rgba(0, 0, 0, 0.25);
+    -webkit-transform: perspective(500px) rotateY(-5deg) rotateX(5deg)
+        rotateZ(-1deg);
+    transform: perspective(500px) rotateY(-5deg) rotateX(5deg) rotateZ(-1deg);
+}
+
+.feature-icon img{
+    max-height: 75px;
+}
+
+.customer img{
+    max-height: 40px;
+    display: inline-block;
+}
+
+.customers {
+    line-height: 80px;
+}
+
+.customer:not(:first-child){
+    margin-left: 15px;
+}
+
+.projects {
+    text-align: center;
+}
