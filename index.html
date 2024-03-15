@@ -72,6 +72,7 @@
                   <a target="_blank" class="lang-logo" href="https://github.com/afipsdk/afip.php"><img alt="php" src="./images/php_elephant_pink.svg"></a>
                   <a target="_blank" class="lang-logo" href="https://github.com/afipsdk/afip.js"><img alt="js" src="./images/file_type_js.svg"></a>
                   <a target="_blank" class="lang-logo" href="https://github.com/afipsdk/afip.rb"><img alt="ruby" src="./images/ruby.svg"></a>
+                  <a target="_blank" class="lang-logo logo-api" href="https://docs.afipsdk.com/"><img alt="api" src="./images/api.svg"></a>
                 </div>
               </div>
               <div class="hero-figure anime-element">
@@ -128,6 +129,9 @@
                       </div>
                       <div class="col-6" data-lang="python">
                         <img src="./images/python.svg" alt="python" /><span class="file">Factura.py</span>
+                      </div>
+                      <div class="col-6" data-lang="shell">
+                        <img src="./images/api.svg" alt="api" /><span class="file">Factura</span>
                       </div>
                     </div>
                     <pre class="line-numbers language-js active" style="white-space:pre-wrap;">
@@ -212,6 +216,27 @@
                           "cae": res["CAE"], 
                           "vencimiento": res["CAEFchVto"]
                         })
+                      </code>
+                    </pre>
+                    <pre class="line-numbers language-shell" style="white-space:pre-wrap;">
+                      <code>
+                        curl --location 'https://app.afipsdk.com/api/v1/afip/requests' \
+                        --data '{
+                            "environment": "dev",
+                            "method": "FECAESolicitar",
+                            "wsid": "wsfe",
+                            "params": {
+                                "FeCAEReq" : {
+                                    "FeDetReq" : { 
+                                        "FECAEDetRequest" : {
+                                            "CbteFch" : 20240313,
+                                            "ImpTotal" : 121,
+                                            ...
+                                        }
+                                    }
+                                }
+                            }
+                        }'
                       </code>
                     </pre>
                   </div>

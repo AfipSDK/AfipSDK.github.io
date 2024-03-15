@@ -18,6 +18,10 @@
     display: inline-block;
 }
 
+.lang-logo.logo-api img{
+    width: 40px;
+}
+
 .tabs{
 	margin-left: 0;
     text-align: left;
@@ -42,6 +46,7 @@
 
 .tabs > div > img {
 	height: 13px;
+	width: 20px;
     display: inline-block;
 	vertical-align: middle;
 	padding-right: 6px;
