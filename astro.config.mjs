@@ -6,6 +6,7 @@ import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
 import simpleStackForm from "simple-stack-form";
 import { defineConfig } from "astro/config";
+import partytown from '@astrojs/partytown'
 
 // https://astro.build/config
 export default defineConfig({
@@ -26,6 +27,11 @@ export default defineConfig({
     }),
     db(),
     simpleStackForm(),
+    partytown({
+			config: {
+			  forward: ["dataLayer.push"],
+			},
+		}),
   ],
   output: "static",
   markdown: {
