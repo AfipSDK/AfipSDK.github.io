@@ -20,7 +20,7 @@ const { title, description, pubDate, updatedDate, cover, category } =
       onclick="history.back()"
       class={cn(
         buttonVariants({ variant: "ghost" }),
-        "absolute left-[-200px] top-10 hidden xl:inline-flex text-muted-foreground"
+        "absolute left-[-200px] top-10 hidden xl:inline-flex text-muted-foreground",
       )}
       transition:animate="slide"
     >
@@ -29,32 +29,40 @@ const { title, description, pubDate, updatedDate, cover, category } =
     </button>
 
     <article class="prose dark:prose-invert max-w-none">
-      
-
       <h1 class="font-heading text-5xl my-4" transition:name={`title-${slug}`}>
         {title}
       </h1>
       <p>{description}</p>
-      <Image
-        class="rounded-xl overflow-hidden my-6"
-        width={720}
-        height={360}
-        src={cover}
-        alt={title}
-        transition:name={`img-${slug}`}
-      />
       <div class="flex items-center justify-between">
-        <span
-          class="font-medium text-muted-foreground capitalize"
-          transition:name={`date-${slug}`}
-        >
-          {formatDate(pubDate)}
-          {
-            updatedDate && (
-              <span>- Last updated on {formatDate(updatedDate)}</span>
-            )
-          }
-        </span>
+        <div class="flex">
+          <div class="flex">
+            <img
+              src="/images/blog/ivan.jpg"
+              alt="avatar"
+              class="w-[50px] h-[50px] m-[0px] mr-[20px] rounded-[50px]"
+            />
+          </div>
+          <div class="flex flex-col">
+            <span
+              class="font-medium text-muted-foreground"
+              transition:name={`name-${slug}`}
+            >
+              Ivan Muñoz
+            </span>
+
+            <span
+              class="font-medium text-muted-foreground capitalize text-xs font-thin"
+              transition:name={`date-${slug}`}
+            >
+              {formatDate(pubDate)}
+              {
+                updatedDate && (
+                  <span>- Last updated on {formatDate(updatedDate)}</span>
+                )
+              }
+            </span>
+          </div>
+        </div>
 
         <a
           href={`/blog/category/${category}`}
@@ -66,6 +74,15 @@ const { title, description, pubDate, updatedDate, cover, category } =
         </a>
       </div>
       <hr class="my-6" />
+
+      <Image
+        class="rounded-xl overflow-hidden my-6"
+        width={720}
+        height={360}
+        src={cover}
+        alt={title}
+        transition:name={`img-${slug}`}
+      />
       <slot />
     </article>
   </div>
