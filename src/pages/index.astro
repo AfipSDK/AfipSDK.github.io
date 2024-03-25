@@ -1,0 +1,173 @@
+---
+import { Button } from "@/components/ui/button";
+import { siteConfig } from "@/config/site";
+import MainLayout from "@/layouts/main-layout.astro";
+import { Icon } from "astro-icon/components";
+import CodeSample from "@/components/code-sample";
+import HomeHero from "@/components/home-hero";
+import '../components/prism.css';
+import '../components/code-sample.scss';
+---
+
+<MainLayout title="Libreria para usar los web services de AFIP">
+  <section class="overflow-hidden space-y-6 pb-12 pt-16 lg:py-28">
+    <div class="mx-auto grid justify-center gap-4 md:max-w-[69rem] md:grid-cols-2">
+      <div class="container flex  flex-col items-left gap-5 text-left">
+        <HomeHero client:only/>
+      </div>
+      
+      <div class="px-5 md:px-0 py-5 md:py-0">
+        <CodeSample client:only/>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="features" class="bg-background-200 py-8 md:py-12 lg:py-24">
+    <div class="container space-y-6">
+      <div
+        class="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center"
+      >
+        <h2 class="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
+          Features
+        </h2>
+      </div>
+
+      <div
+        class="mx-auto grid justify-center gap-4 sm:grid-cols-2 md:max-w-[64rem] md:grid-cols-3"
+      >
+        <div
+          class="relative overflow-hidden rounded-lg border bg-background p-2"
+        >
+          <div class="flex h-[180px] flex-col justify-between rounded-md p-5">
+            <Icon name="lucide:file-check-2" class="size-12 fill-current" />
+            <div class="space-y-2">
+              <h3 class="font-bold">Certificados</h3>
+              <p class="text-sm text-muted-foreground">
+                Con el SDK podes generar certificados y autorizaciones.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div
+          class="relative overflow-hidden rounded-lg border bg-background p-2"
+        >
+          <div class="flex h-[180px] flex-col justify-between rounded-md p-5">
+            <Icon name="lucide:fingerprint" class="size-12 fill-current" />
+            <div class="space-y-2">
+              <h3 class="font-bold">Autenticacion</h3>
+              <p class="text-sm text-muted-foreground">
+                Se encarga automáticamente de la autenticación.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="relative overflow-hidden rounded-lg border bg-background p-2"
+        >
+          <div class="flex h-[180px] flex-col justify-between rounded-md p-5">
+            <Icon name="lucide:cloudy" class="size-12 fill-current" />
+            <div class="space-y-2">
+              <h3 class="font-bold">Todos los web services</h3>
+              <p class="text-sm text-muted-foreground">
+                El SDK te permite utilizar todos los web services de AFIP.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="relative overflow-hidden rounded-lg border bg-background p-2"
+        >
+          <div class="flex h-[180px] flex-col justify-between rounded-md p-5">
+            <Icon name="lucide:file-type" class="size-12 fill-current" />
+            <div class="space-y-2">
+              <h3 class="font-bold">PDF</h3>
+              <p class="text-sm text-muted-foreground">
+                Podes generar los PDF de AFIP con tu formato preferido.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="relative overflow-hidden rounded-lg border bg-background p-2"
+        >
+          <div class="flex h-[180px] flex-col justify-between rounded-md p-5">
+            <Icon name="lucide:book-open-text" class="size-12 fill-current" />
+            <div class="space-y-2">
+              <h3 class="font-bold">Documentacion</h3>
+              <p class="text-sm text-muted-foreground">
+                Incluye una completa documentacion para ayudarte con la integracion.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="relative overflow-hidden rounded-lg border bg-background p-2"
+        >
+          <div class="flex h-[180px] flex-col justify-between rounded-md p-5">
+            <Icon name="lucide:mails" class="size-12 fill-current" />
+            <div class="space-y-2">
+              <h3 class="font-bold">Soporte</h3>
+              <p class="text-sm text-muted-foreground">
+                Te ayudamos con cualquier duda o problema que tengas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mx-auto text-center md:max-w-[58rem]">
+        <p
+          class="leading-normal text-muted-foreground sm:text-lg sm:leading-7 balance-text"
+        >
+        Desde 2017 Afip SDK ha sido descargada más de 60 mil 
+        veces, consolidándose como la biblioteca preferida entre los
+        desarrolladores para integrarse con AFIP.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="open-source" class="px-5 py-8 md:py-12 lg:py-28 bg-[#15181d]">
+    <div
+      class="mx-auto flex max-w-[78rem] flex-col items-center justify-center gap-4 text-center"
+    >
+      <h2 class="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-4xl mb-5">
+        Confian en nosotros
+      </h2>
+      <p
+        class="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7 gap-4 "
+      >
+        <a target="_blank" class="mx-2 my-2 inline-block" href="https://afluenta.com/"><img class="max-h-[40px] inline-block" alt="afluenta" src="/images/customers/afluenta.png" /></a>
+        <a target="_blank" class="mx-2 my-2 inline-block" href="https://www.tiendanube.com/"><img class="max-h-[40px] inline-block" alt="tiendanube" src="/images/customers/tiendanube.png" /></a>
+        <a target="_blank" class="mx-2 my-2 inline-block" href="https://www.rappi.com/"><img class="max-h-[40px] inline-block" alt="rappi" src="/images/customers/rappi.png" /></a>
+        <a target="_blank" class="mx-2 my-2 inline-block" href="https://www.depilife.com.ar/"><img class="max-h-[40px] inline-block" alt="depilife" src="/images/customers/depilife.png" /></a>
+        <a target="_blank" class="mx-2 my-2 inline-block" href="https://www.ecomm-app.com/"><img class="max-h-[40px] inline-block" alt="ecomm-app" src="/images/customers/ecomm-app.png" /></a>
+      </p>
+    </div>
+  </section>
+  
+  <section
+      class="relative container max-w-screen-md mb-28 mt-16 sm:mt-20 lg:mt-28"
+    >
+      <div class="flex h-full flex-col justify-between">
+        <div class="grid gap-8 sm:grid-cols-2 text-center">
+          <div>
+            <h1 class="text-4xl font-heading text-foreground">¿Alguna duda?</h1>
+          </div>
+          <div>
+            <div class="flex items-center justify-center gap-3">
+              <Button >
+                <Icon name="lucide:mail" class="mr-2 size-4" />
+                <a href={`mailto:${siteConfig.contact}`}>Contactanos</a>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+</MainLayout>
