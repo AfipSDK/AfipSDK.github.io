@@ -6,6 +6,10 @@ cover: "/images/blog/node.png"
 category: "Javascript"
 ---
 
+El primer paso para crear una factura electrónica de AFIP es obtener el Código de Autorización Electrónico o CAE. 
+
+Esto lo vamos a hacer utilizando Afip SDK que nos permite conectarnos a los web services de AFIP sin complicarnos con el uso de SOAP y la autenticación.
+
 ## Instalación
 
 Lo primero es instalar la librería [Afip.js](https://github.com/AfipSDK/afip.js)
@@ -83,4 +87,6 @@ console.log(res['CAE']); //CAE asignado el comprobante
 console.log(res['CAEFchVto']); //Fecha de vencimiento del CAE (yyyy-mm-dd)
 ```
 
-Eso es todo, ya tenemos el CAE correspondiente a la factura que acabamos de crear. Lo único que nos queda es pasar a modo producción, para más información de cómo hacerlo pueden dirigirse a la documentación de la librería https://docs.afipsdk.com/
+Ahora que tenemos el CAE ya podemos proceder a [Crear PDF de AFIP en NodeJS](/blog/crear-pdf-de-afip-en-nodejs).
+
+Luego, lo único que nos queda es pasar a modo producción, para más información de cómo hacerlo pueden dirigirse a la documentación de la librería https://docs.afipsdk.com/

@@ -6,8 +6,9 @@ cover: "/images/blog/api.png"
 category: "API"
 ---
 
-A través de la API de Afip SDK podemos conectarnos a los servicios de AFIP sin complicarnos con el uso de SOAP y la autenticación.
+El primer paso para crear una factura electrónica de AFIP es obtener el Código de Autorización Electrónico o CAE. 
 
+Esto lo vamos a hacer utilizando Afip SDK que nos permite conectarnos a los web services de AFIP sin complicarnos con el uso de SOAP y la autenticación.
 
 ## Obtener la autorización
 
