@@ -1,0 +1,33 @@
+---
+import { Button } from "@/components/ui/button";
+import { siteConfig } from "@/config/site";
+import MainLayout from "@/layouts/main-layout.astro";
+import { Icon } from "astro-icon/components";
+import CodeSample from "@/components/code-sample";
+import HomeHero from "@/components/home-hero";
+import '../components/prism.css';
+import '../components/code-sample.scss';
+---
+
+<MainLayout title="Libreria para usar los web services de AFIP">
+  <section class="overflow-hidden space-y-6 pb-12 pt-16">
+    <div class="mx-auto grid justify-center gap-4 md:max-w-[69rem]">
+      <div class="container flex  flex-col items-left gap-4 text-center">
+        <h1
+        class="font-heading text-4xl font-bold sm:text-5xl md:text-6xl lg:text-6xl !leading-[1.1] text-balance"
+        >
+          Error 404
+        </h1>
+
+        <p
+        class="max-w-[42rem] gap-4 leading-normal text-muted-foreground sm:text-xl sm:leading-8 text-balance"
+        >
+        
+        <img src="/images/others/cat.png" alt="lost-cat" class="max-w-[30rem]">
+        <p>Parece que te perdiste</p>
+        </p>
+      </div>
+    </div>
+  </section>
+
+</MainLayout>
