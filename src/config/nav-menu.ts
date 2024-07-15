@@ -18,6 +18,12 @@ export const navMenuConfig: NavMenuConfig = {
           description: "",
           image: "",
         },
+        {
+          title: "Comunidad",
+          href: siteConfig.links.discord,
+          description: "",
+          image: "",
+        },
       ],
     },
   ],

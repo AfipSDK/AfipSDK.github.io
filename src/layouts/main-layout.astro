@@ -48,6 +48,15 @@ const { title, description, mainClass } = Astro.props;
       >
         Documentacion
       </a>
+      <a
+        href={siteConfig.links.discord}
+        target="_blank"
+        rel="noreferrer"
+        aria-label="documentacion"
+        class={cn(buttonVariants({ size: "sm", variant: 'ghost' }))}
+      >
+        Comunidad
+      </a>
     </div>
 
     <SheetMobileNav

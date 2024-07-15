@@ -37,6 +37,7 @@ export type SiteConfig = {
   ogImage: string;
   contact: string;
   links: {
+    discord: string;
     github: string;
     docs: string;
     sdkJs: string;

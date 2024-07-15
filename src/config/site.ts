@@ -8,6 +8,7 @@ export const siteConfig: SiteConfig = {
   ogImage: "https://afipsdk.com/og.png",
   contact: "ivan@afipsdk.com",
   links: {
+    discord: "https://discord.gg/A6TuHEyAZm",
     github: "https://github.com/afipsdk",
     docs: "https://docs.afipsdk.com",
     sdkPython: 'https://github.com/afipsdk/afip.py',
