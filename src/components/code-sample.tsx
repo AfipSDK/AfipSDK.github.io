@@ -52,20 +52,20 @@ export default function CodeSample() {
 			></div>
 			<div className="code-sample hero-figure-box hero-figure-box-code">
 				<div className="code-tabs">
-					<div className="row tabs">
-						<div className={`col-6 ${activeLang === 'js' && 'active'}`} onClick={() => setActiveLang('js')}>
+					<div className="tabs">
+						<div className={`${activeLang === 'js' && 'active'}`} onClick={() => setActiveLang('js')}>
 						<img className="max-w-[20px]" src="/images/icons/js.svg" alt="js" /><span className="file">Factura.js</span>
 						</div>
-						<div className={`col-6 ${activeLang === 'php' && 'active'}`} onClick={() => setActiveLang('php')}>
+						<div className={`${activeLang === 'php' && 'active'}`} onClick={() => setActiveLang('php')}>
 						<img className="max-w-[20px]" src="/images/icons/php.svg" alt="php" /><span className="file">Factura.php</span>
 						</div>
-						<div className={`col-6 ${activeLang === 'ruby' && 'active'}`} onClick={() => setActiveLang('ruby')}>
+						<div className={`${activeLang === 'ruby' && 'active'}`} onClick={() => setActiveLang('ruby')}>
 						<img className="max-w-[20px]" src="/images/icons/ruby.svg" alt="ruby" /><span className="file">Factura.rb</span>
 						</div>
-						<div className={`col-6 ${activeLang === 'python' && 'active'}`} onClick={() => setActiveLang('python')}>
+						<div className={`${activeLang === 'python' && 'active'}`} onClick={() => setActiveLang('python')}>
 						<img className="max-w-[20px]" src="/images/icons/python.svg" alt="python" /><span className="file">Factura.py</span>
 						</div>
-						<div className={`col-6 ${activeLang === 'api' && 'active'}`} onClick={() => setActiveLang('api')}>
+						<div className={`${activeLang === 'api' && 'active'}`} onClick={() => setActiveLang('api')}>
 						<img className="max-w-[20px]" src="/images/icons/api.svg" alt="api" /><span className="file">Factura</span>
 						</div>
 					</div>
