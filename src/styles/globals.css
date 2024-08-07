@@ -184,3 +184,9 @@
 [data-radix-scroll-area-viewport]::-webkit-scrollbar {
   display: none
 }
+
+
+.prose :where(code):not(:where([class~="not-prose"], [class~="not-prose"] *))::before, 
+.prose :where(code):not(:where([class~="not-prose"], [class~="not-prose"] *))::after {
+  content: "";
+}
