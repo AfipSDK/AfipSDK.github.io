@@ -1,5 +1,5 @@
 ---
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import { siteConfig } from "@/config/site";
 import MainLayout from "@/layouts/main-layout.astro";
 import { Icon } from "astro-icon/components";
@@ -142,11 +142,11 @@ import '../components/code-sample.scss';
       <p
         class="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7 gap-4 "
       >
-        <a target="_blank" class="mx-2 my-2 inline-block" href="https://afluenta.com/"><img class="max-h-[40px] inline-block" alt="afluenta" src="/images/customers/afluenta.png" /></a>
-        <a target="_blank" class="mx-2 my-2 inline-block" href="https://www.tiendanube.com/"><img class="max-h-[40px] inline-block" alt="tiendanube" src="/images/customers/tiendanube.png" /></a>
-        <a target="_blank" class="mx-2 my-2 inline-block" href="https://www.rappi.com/"><img class="max-h-[40px] inline-block" alt="rappi" src="/images/customers/rappi.png" /></a>
-        <a target="_blank" class="mx-2 my-2 inline-block" href="https://www.depilife.com.ar/"><img class="max-h-[40px] inline-block" alt="depilife" src="/images/customers/depilife.png" /></a>
-        <a target="_blank" class="mx-2 my-2 inline-block" href="https://www.ecomm-app.com/"><img class="max-h-[40px] inline-block" alt="ecomm-app" src="/images/customers/ecomm-app.png" /></a>
+        <a target="_blank" class="mx-2 my-2 inline-block" href="https://afluenta.com/"><img class="h-[40px] inline-block" alt="afluenta" src="/images/customers/afluenta.png" /></a>
+        <a target="_blank" class="mx-2 my-2 inline-block" href="https://www.tiendanube.com/"><img class="h-[40px] inline-block" alt="tiendanube" src="/images/customers/tiendanube.png" /></a>
+        <a target="_blank" class="mx-2 my-2 inline-block" href="https://www.rappi.com/"><img class="h-[40px] inline-block" alt="rappi" src="/images/customers/rappi.png" /></a>
+        <a target="_blank" class="mx-2 my-2 inline-block" href="https://www.depilife.com.ar/"><img class="h-[40px] inline-block" alt="depilife" src="/images/customers/depilife.png" /></a>
+        <a target="_blank" class="mx-2 my-2 inline-block" href="https://www.ecomm-app.com/"><img class="h-[40px] inline-block" alt="ecomm-app" src="/images/customers/ecomm-app.png" /></a>
       </p>
     </div>
   </section>
@@ -161,10 +161,10 @@ import '../components/code-sample.scss';
           </div>
           <div>
             <div class="flex items-center justify-center gap-3">
-              <Button >
+              <a class={buttonVariants()} href={`mailto:${siteConfig.contact}`}>
                 <Icon name="lucide:mail" class="mr-2 size-4" />
-                <a href={`mailto:${siteConfig.contact}`}>Contactanos</a>
-              </Button>
+                Contactanos
+              </a>
             </div>
           </div>
         </div>

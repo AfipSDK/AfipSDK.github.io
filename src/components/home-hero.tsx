@@ -64,7 +64,7 @@ export default function HomeHero() {
 				rel="noreferrer"
 				aria-label="python sdk"
 			>
-				<img className="w-[40px]" src="/images/icons/python.svg" alt="python" />
+				<img className="w-[40px] h-[40px]" src="/images/icons/python.svg" alt="python" />
 			</a>
 			<a
 				href={siteConfig.links.sdkJs}
@@ -72,7 +72,7 @@ export default function HomeHero() {
 				rel="noreferrer"
 				aria-label="js sdk"
 			>
-				<img className="w-[40px]" src="/images/icons/js.svg" alt="js" />
+				<img className="w-[40px] h-[40px]" src="/images/icons/js.svg" alt="js" />
 			</a>
 			<a
 				href={siteConfig.links.sdkPhp}
@@ -80,7 +80,7 @@ export default function HomeHero() {
 				rel="noreferrer"
 				aria-label="php sdk"
 			>
-				<img className="w-[40px]" src="/images/icons/php.svg" alt="php" />
+				<img className="w-[40px] h-[40px]" src="/images/icons/php.svg" alt="php" />
 			</a>
 			<a
 				href={siteConfig.links.sdkRuby}
@@ -88,7 +88,7 @@ export default function HomeHero() {
 				rel="noreferrer"
 				aria-label="ruby sdk"
 			>
-				<img className="w-[40px]" src="/images/icons/ruby.svg" alt="ruby" />
+				<img className="w-[40px] h-[40px]" src="/images/icons/ruby.svg" alt="ruby" />
 			</a>
 			<a
 				href={siteConfig.links.docs}
@@ -96,7 +96,7 @@ export default function HomeHero() {
 				rel="noreferrer"
 				aria-label="api docs"
 			>
-				<img className="h-[20px]" src="/images/icons/api.svg" alt="api" />
+				<img className="w-[46px] h-[20px]" src="/images/icons/api.svg" alt="api" />
 			</a>
 			</div>
 
