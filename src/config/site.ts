@@ -11,6 +11,7 @@ export const siteConfig: SiteConfig = {
     discord: "https://discord.gg/A6TuHEyAZm",
     github: "https://github.com/afipsdk",
     docs: "https://docs.afipsdk.com",
+    productionDocs: "https://docs.afipsdk.com/paso-a-paso/ir-a-produccion",
     sdkPython: 'https://github.com/afipsdk/afip.py',
     sdkJs: 'https://github.com/afipsdk/afip.js',
     sdkPhp: 'https://github.com/afipsdk/afip.php',

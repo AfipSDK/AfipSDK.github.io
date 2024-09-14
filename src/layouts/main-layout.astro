@@ -34,7 +34,7 @@ const { title, description, mainClass } = Astro.props;
     
     <div class="flex items-center gap-x-4" slot="left-header">
       <a
-        href="/blog/"
+        href="/blog"
         class={cn(buttonVariants({ size: "sm", variant: 'ghost' }))}
       >
         Blog
@@ -56,6 +56,12 @@ const { title, description, mainClass } = Astro.props;
         class={cn(buttonVariants({ size: "sm", variant: 'ghost' }))}
       >
         Comunidad
+      </a>
+      <a
+        href="/pricing"
+        class={cn(buttonVariants({ size: "sm", variant: 'ghost' }))}
+      >
+        Precio
       </a>
     </div>
 

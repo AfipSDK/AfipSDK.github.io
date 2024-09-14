@@ -24,6 +24,12 @@ export const navMenuConfig: NavMenuConfig = {
           description: "",
           image: "",
         },
+        {
+          title: "Precio",
+          href: "/pricing",
+          description: "",
+          image: "",
+        },
       ],
     },
   ],

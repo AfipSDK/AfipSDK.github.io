@@ -40,6 +40,7 @@ export type SiteConfig = {
     discord: string;
     github: string;
     docs: string;
+    productionDocs: string;
     sdkJs: string;
     sdkPhp: string;
     sdkPython: string;

@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
-
+User-agent: *
+Disallow: /pricing
 Sitemap: https://afipsdk.com/sitemap-index.xml
