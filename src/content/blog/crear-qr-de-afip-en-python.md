@@ -2,7 +2,7 @@
 title: "Crear QR de AFIP en Python"
 description: "Con pocas líneas de código"
 pubDate: "Oct 4 2024"
-cover: "/images/blog/python.png"
+cover: "/images/blog/python-create-qr.png"
 category: "Python"
 ---
 
