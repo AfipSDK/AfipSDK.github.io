@@ -2,7 +2,7 @@
 title: "Crear certificado para usar web services de AFIP via API"
 description: "Con pocas líneas de código"
 pubDate: "Aug 24 2024"
-cover: "/images/blog/api.png"
+cover: "/images/blog/api-create-cert.png"
 category: "API"
 ---
 

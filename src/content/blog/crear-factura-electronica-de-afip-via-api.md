@@ -1,23 +1,24 @@
 ---
-title: "Crear factura electrónica de AFIP via API"
-description: "Con pocas líneas de código"
+title: "API de factura electrónica de AFIP"
+description: "Como usarla paso a paso"
 pubDate: "Mar 17 2024"
-cover: "/images/blog/api.png"
+updatedDate: "Oct 11 2024"
+cover: "/images/blog/api-create-invoice.png"
 category: "API"
 ---
 
-El primer paso para crear una factura electrónica de AFIP es obtener el Código de Autorización Electrónico o CAE. 
+El primer paso para crear una factura electrónica de AFIP es obtener el Código de Autorización Electrónico o CAE.
 
-Esto lo vamos a hacer utilizando Afip SDK que nos permite conectarnos a los web services de AFIP sin complicarnos con el uso de SOAP y la autenticación.
+Esto lo vamos a hacer utilizando el API de factura electrónica de Afip SDK, que nos permite conectarnos a los web services de AFIP sin complicarnos con el uso de SOAP y la autenticación.
 
 ## Obtener la autorización
 
-Lo primero que tenemos hacer es obtener el “Token authorization”, que seria la autorización en AFIP.
+Lo primero que tenemos que hacer es obtener el “Token Authorization”, que sería la autorización en AFIP.
 
-Para usar los web services de AFIP necesitamos un [certificado y key](https://docs.afipsdk.com/paso-a-paso/instalacion#opcional-si-queres-usar-tu-propio-certificado-para-desarrollo) pero Afip SDK nos deja utilizar el CUIT 20409378472 en modo testing para integrarnos rápidamente.
+Para usar los web services de AFIP necesitamos un [certificado y key](https://docs.afipsdk.com/paso-a-paso/instalacion#opcional-si-queres-usar-tu-propio-certificado-para-desarrollo), pero Afip SDK nos permite utilizar el CUIT 20409378472 en modo testing para integrarnos rápidamente.
 
 
-Debemos ejecutar una solicitud **POST** al endpoint
+Debemos ejecutar una solicitud **POST** al endpoint:
 
 ```bash
 https://app.afipsdk.com/api/v1/afip/auth
@@ -41,7 +42,7 @@ Como respuesta nos devolverá
 }
 ```
 
-Aquí tenemos el token y sign que nos dio AFIP para usar el web service. No es necesario que lo guardemos, Afip SDK se encarga de esto por nosotros, debemos solicitarlo antes de cada llamada a los métodos del web service.
+Aquí tenemos el token y el sign que nos dio AFIP para usar el web service. No es necesario que lo guardemos, Afip SDK se encarga de esto por nosotros. Debemos solicitarlo antes de cada llamada a los métodos del web service.
 
 
 ## Crear la factura
@@ -103,7 +104,7 @@ https://app.afipsdk.com/api/v1/afip/requests
 
 Debemos reemplazar **{{token}}** y **{{sign}}** con los que obtuvimos anteriormente.
 
-En la respuesta nos devolverá el CEA y su vencimiento
+En la respuesta, nos devolverá el CAE y su vencimiento:
 
 ```json
 {
@@ -113,6 +114,6 @@ En la respuesta nos devolverá el CEA y su vencimiento
 ...
 }
 ```
-Eso es todo, ya tenemos el CAE correspondiente a la factura que acabamos de crear.
+Eso es todo, ya tenemos el CAE correspondiente a la factura que acabamos de crear a través del API de factura electrónica de Afip SDK.
 
-Lo único que nos queda es pasar a modo producción, para más información de cómo hacerlo pueden dirigirse a la documentación de la librería https://docs.afipsdk.com/
+Lo único que nos queda es pasar a modo producción. Para más información de cómo hacerlo, pueden dirigirse a la documentación de la librería: https://docs.afipsdk.com/

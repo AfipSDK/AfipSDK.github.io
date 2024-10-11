@@ -2,7 +2,7 @@
 title: "Usar web service factura MiPyME via API"
 description: "Con pocas líneas de código"
 pubDate: "Sep 25 2024"
-cover: "/images/blog/api.png"
+cover: "/images/blog/api-use-mipyme.png"
 category: "API"
 ---
 

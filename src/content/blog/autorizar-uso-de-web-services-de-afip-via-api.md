@@ -2,7 +2,7 @@
 title: "Autorizar uso de web services de AFIP via API"
 description: "Con pocas líneas de código"
 pubDate: "Aug 24 2024"
-cover: "/images/blog/api.png"
+cover: "/images/blog/api-auth-ws.png"
 category: "API"
 ---
 
