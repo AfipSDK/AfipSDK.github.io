@@ -41,7 +41,7 @@ qr_code_data = {
 }
 
 
-# Preparamos el texto para el qr en base a https://www.afip.gob.ar/fe/qr/especificaciones.asp
+# Preparamos el texto para el qr en base a https://www.afip.gob.ar/fe/qr/documentos/QRespecificaciones.pdf
 qr_code_text = 'https://www.afip.gob.ar/fe/qr/?p=' + base64.urlsafe_b64encode(json.dumps(qr_code_data).encode('utf-8')).decode('utf-8')
 
 qrcode = segno.make_qr(qr_code_text)
@@ -54,4 +54,4 @@ qrcode.save('qr-afip.png') # o podemos guardarlo como un archivo
 ![QR de AFIP](/images/blog/qr-afip.png)
 
 
-Ya tenemos el QR listo para nuestro comprobante. Ahora podemos [crear el PDF](/blog/crear-factura-electronica-de-afip-en-python/)
+Ya tenemos el QR listo para nuestro comprobante. Ahora podemos [crear el PDF](/blog/crear-pdf-de-afip-en-python/)
