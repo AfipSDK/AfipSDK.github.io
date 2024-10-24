@@ -36,19 +36,36 @@ const { title, description, pubDate, updatedDate, cover, category } =
       <div class="flex items-center justify-between">
         <div class="flex">
           <div class="flex">
-            <img
+            <a 
+              href="https://www.linkedin.com/in/ivanalejandromunoz/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              transition:name={`avatar-${slug}`}
+              class="mr-[20px] rounded-[50px]"
+            >
+              <img
               src="/images/blog/ivan.jpg"
               alt="avatar"
-              class="w-[50px] h-[50px] m-[0px] mr-[20px] rounded-[50px]"
-            />
+              class="w-[50px] h-[50px] m-[0px] rounded-[50px]"
+              />
+            </a>
           </div>
           <div class="flex flex-col">
-            <span
+            <a 
+              href="https://www.linkedin.com/in/ivanalejandromunoz/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              transition:name={`name-${slug}`}
+              class="font-medium text-muted-foreground no-underline hover:underline"
+            >
+              Ivan Muñoz
+            </a>
+            <!-- <span
               class="font-medium text-muted-foreground"
               transition:name={`name-${slug}`}
             >
               Ivan Muñoz
-            </span>
+            </span> -->
 
             <span
               class="font-medium text-muted-foreground capitalize text-xs font-thin"
